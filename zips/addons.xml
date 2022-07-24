@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+
+<addon id="plugin.video.viaplay" version="2.3.7" name="Viaplay" provider-name="emilsvennesson, mariusz89b, Beanow, heppen-dev, zuzia-dev">
+   <requires>
+      <import addon="script.module.requests" version="2.9.1" />
+      <import addon="script.module.iso8601" version="0.1.11" />
+      <import addon="script.module.inputstreamhelper" version="0.3.3" />
+      <import addon="script.module.routing" version="0.2.0" />
+   </requires>
+   <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+   </extension>
+   <extension point="xbmc.addon.metadata">
+      <description lang="da_DK">Se indhold fra Viaplay.</description>
+      <description lang="en_GB">Watch content from Viaplay.</description>
+      <description lang="fi_FI">Katso sisältöä Viaplay.</description>
+      <description lang="nb_NO">Se innhold fra Viaplay.</description>
+      <description lang="sv_SE">Titta på innehåll från Viaplay.</description>
+      <description lang="nl_NL">Bekijk de inhoud van Viaplay.</description>
+      <description lang="et_EE">Vaata Viaplay sisu.</description>
+      <description lang="pl_PL">Oglądaj treści z Viaplay.</description>
+      <description lang="lt_LT">Žiūrėkite turinį iš Viaplay.</description>
+      <news>2022.07.07 v2.3.7[CR]+ Added viaplay.ee @zuzia-dev[CR]+ Incompatibility Issues on new ISA @zuzia-dev[CR]2022.04.24 v2.3.6[CR]+ Added profiles support @heppen-dev and @Beanow[CR]2022.04.11 v2.3.5[CR]+ Optimizations for additional information @heppen-dev[CR]+ Fixed Unknown Video Info Key error @heppen-dev[CR]2022.04.09 v2.3.4[CR]+ Added more informations and quality info to description @zuzia-dev[CR]2022.04.05 v2.3.3[CR]+ Fixed live tv channels and popular sports in .se @heppen-dev[CR]2022.03.27 v2.3.2[CR]+ Fixed sports series event listing @heppen-dev</news>
+      <platform>all</platform>
+      <language>sv dk no fi en pl lt nl</language>
+      <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+      <source>https://github.com/emilsvennesson/kodi-viaplay</source>
+      <forum>http://forum.kodi.tv/showthread.php?tid=286387</forum>
+      <disclaimer>This add-on requires you to have a subscription to Viaplay.[CR]This add-on is completely unofficial and is not endorsed by Viaplay in any way.</disclaimer>
+      <assets>
+         <icon>resources/art/icon.png</icon>
+         <fanart>resources/art/fanart.jpg</fanart>
+      </assets>
+   </extension>
+</addon>
+
+<addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.0" provider-name="Repozytorium-Kodi">
+    <requires>
+        <import addon="xbmc.addon" version="18.9.701"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
+        <dir minversion="19.0.0">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repozytorium-Kodi</summary>
+        <description lang="en">This is the unofficial add-on repository for Kodi.</description>
+        <description lang="pl">To jest nieoficjalne repozytorium dodatków dla Kodi.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.jpg</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+</addons>
+
+
