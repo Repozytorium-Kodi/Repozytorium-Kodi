@@ -1,7 +1,10 @@
-2022.11.07 v.2.2.8
+2022.12.22 v.2.3.9
++ Add support for IPTVManager @ZefQ
+
+2022.11.07 v.2.3.8
 + Added viaplay.gb @zuzia-dev
 
-2022.07.07 v.2.2.7
+2022.07.07 v.2.3.7
 + Added viaplay.ee @zuzia-dev
 + Incompatibility Issues on new ISA
 
