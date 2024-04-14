@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
-<addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
+<addons><addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
     <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
         <dir minversion="20.9.1">
             <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml</info>
@@ -11,6 +10,11 @@
             <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/</datadir>
+        </dir>
+        <dir minversion="19.0.0" maxversion="19.9.1">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
@@ -144,5 +148,4 @@
 		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
 		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
 	</extension>
-</addon>
-</addons>
+</addon></addons>

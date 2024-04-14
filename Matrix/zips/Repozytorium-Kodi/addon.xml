@@ -11,6 +11,11 @@
             <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/</datadir>
         </dir>
+        <dir minversion="19.0.0" maxversion="19.9.1">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Matrix/zips/</datadir>
+        </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Repozytorium-Kodi</summary>
