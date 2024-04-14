@@ -1,5 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
+    <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
+        <dir minversion="20.9.1">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/</datadir>
+        </dir>
+        <dir minversion="19.9.1" maxversion="20.9.0">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repozytorium-Kodi</summary>
+        <description lang="en">This is the unofficial add-on repository for Kodi.</description>
+        <description lang="pl">To jest nieoficjalne repozytorium dodatków dla Kodi.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.jpg</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
 
 <addon id="plugin.video.viaplay" version="2.3.9" name="Viaplay" provider-name="emilsvennesson, mariusz89b, Beanow, heppen-dev, zuzia-dev, ZefQ">
    <requires>
