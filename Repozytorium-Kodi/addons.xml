@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
 <addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
-    <requires>
-        <import addon="xbmc.addon" version="18.9.701"/>
-    </requires>
     <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
         <dir minversion="20.9.1">
             <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml</info>
@@ -11,8 +7,8 @@
             <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/</datadir>
         </dir>
         <dir minversion="19.9.1" maxversion="20.9.0">
-            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips//addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main//Nexus/zips/addons.xml.md5</checksum>
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips/</datadir>
         </dir>
     </extension>
@@ -27,6 +23,6 @@
         </assets>
     </extension>
 </addon>
-</addons>
+
 
 
