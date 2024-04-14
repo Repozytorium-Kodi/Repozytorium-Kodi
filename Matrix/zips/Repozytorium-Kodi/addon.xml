@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
+    <requires>
+        <import addon="xbmc.addon" version="18.9.701"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
+        <dir minversion="19.0.0">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/Repozytorium-Kodi/Repozytorium-Kodi/main/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Repozytorium-Kodi</summary>
+        <description lang="en">This is the unofficial add-on repository for Kodi.</description>
+        <description lang="pl">To jest nieoficjalne repozytorium dodatków dla Kodi.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>resources/icon.jpg</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
