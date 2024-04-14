@@ -35,7 +35,6 @@
    </extension>
 </addon>
 
-<?xml version="1.0" encoding="UTF-8"?>
 <addon id="skin.blue.amber" version="3.50.01" name="Amber Blue" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
 	<requires>
 		<import addon="xbmc.gui" version="5.16.0"/>
@@ -122,34 +121,4 @@
 		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
 	</extension>
 </addon>
-
-<addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
-    <requires>
-        <import addon="xbmc.addon" version="18.9.701"/>
-    </requires>
-    <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
-        <dir minversion="20.9.1">
-            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips//addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/</datadir>
-        </dir>
-        <dir minversion="19.9.1" maxversion="20.9.0">
-            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Nexus/zips//addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main//Nexus/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main//Nexus/zips/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Repozytorium-Kodi</summary>
-        <description lang="en">This is the unofficial add-on repository for Kodi.</description>
-        <description lang="pl">To jest nieoficjalne repozytorium dodatków dla Kodi.</description>
-        <platform>all</platform>
-        <assets>
-            <icon>resources/icon.jpg</icon>
-            <fanart>resources/fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
 </addons>
-
-
