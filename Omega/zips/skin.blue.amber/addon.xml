@@ -28,7 +28,10 @@
 			<screenshot>resources/screenshot09.jpg</screenshot>
 			<screenshot>resources/screenshot10.jpg</screenshot>
 		</assets>
-		<news>3.4.32 (11-01-2022)
+		<news>3.99.01-omega (15.04.2024)
+			- Blue MOD
+			- Polish description
+			3.4.32 (11-01-2022)
 			- Allow different view types for PVR
 			- Search for trailer and play trailer in window (video info)
 			- Date added and Last Played in video info dialog
@@ -58,8 +61,8 @@
 		<summary lang="fr_FR">Pas d&apos;usine à gaz, juste les médias avec une interface épurée</summary>
 		<summary lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti</summary>
 		<summary lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare</summary>
-		<summary lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem</summary>
 		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
+		<summary lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem</summary>
 		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
 		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
 		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
