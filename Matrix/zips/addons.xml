@@ -2121,4 +2121,23 @@ v0.0.3
 		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
 		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
 	</extension>
+</addon>
+
+<addon id="repository.mtr81" name="mtr81" version="1.0" provider-name="lg">
+    <extension point="xbmc.addon.repository" name="mtr81">
+        <dir>
+            <info compressed="false">https://mtr81.github.io/kodi_addons/addons/addons.xml</info>
+            <checksum>https://mtr81.github.io/kodi_addons/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://mtr81.github.io/kodi_addons/addons/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Wtyczki do odtwarzacza Kodi (v.19,20)</summary>
+        <description>Wtyczki do odtwarzacza Kodi (v.19,20)</description>
+        <platform>all</platform>
+        <assets>
+            <icon></icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
 </addon></addons>
