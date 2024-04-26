@@ -733,5 +733,45 @@
     <disclaimer lang="zh_CN">作者不对播放失败、错误的电子节目单时间造成时间浪费或其它不良影响负责。</disclaimer>
     <disclaimer lang="zh_TW">這是測試中的軟體！原創作者無法針對以下情況負責：包括播放失敗，不正確的電子節目表，多餘的時數，或任何不可預期的不良影響。</disclaimer>
   </extension>
-</addon></addons>
+</addon>
 
+<addon id="repository.addons.paco8" name="Addons by Paco8" version="1.0.0" provider-name="Paco8">
+	<extension point="xbmc.addon.repository">
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons by Paco8</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+		<icon>icon.jpg</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository">
+    <dir>
+      <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon></addons>
