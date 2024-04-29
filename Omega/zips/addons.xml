@@ -774,4 +774,219 @@
       <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
+</addon>
+
+<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.35" provider-name="Martijn, phil65, scott967">
+    <requires>
+        <import addon="xbmc.json" version="12.0.0"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+    </requires>
+    <extension point="xbmc.service" library="default.py"/>
+	<extension point="xbmc.python.library" library="default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="be_BY">Skin widgets</summary>
+        <summary lang="da_DK">Widgets til Skins</summary>
+        <summary lang="de_DE">Skin Widgets</summary>
+        <summary lang="el_GR">Widgets κελύφους</summary>
+        <summary lang="en_GB">Skin widgets</summary>
+        <summary lang="es_ES">Skin widgets</summary>
+        <summary lang="fr_FR">Skin widgets</summary>
+        <summary lang="gl_ES">Widgets do Tema</summary>
+        <summary lang="hr_HR">Dodaci za presvlaku</summary>
+        <summary lang="hu_HU">Kinézet miniprogram</summary>
+        <summary lang="it_IT">Skin widgets</summary>
+        <summary lang="ko_KR">스킨 위젯</summary>
+        <summary lang="nl_NL">Skin widgets</summary>
+        <summary lang="pl_PL">Dodatki Skóry</summary>
+        <summary lang="pt_PT">Widgets para Temas</summary>
+        <summary lang="pt_BR">Skin widgets</summary>
+        <summary lang="sk_SK">Widgety Vzhľadov</summary>
+        <summary lang="sv_SE">Skal widgetar</summary>
+        <summary lang="zh_CN">皮肤微件</summary>
+        <description lang="be_BY">Skin widgets</description>
+        <description lang="da_DK">Widgets til Skins</description>
+        <description lang="de_DE">Skin Widgets</description>
+        <description lang="el_GR">Widgets κελύφους</description>
+        <description lang="en_GB">Skin widgets</description>
+        <description lang="es_ES">Skin widgets</description>
+        <description lang="fr_FR">Skin widgets</description>
+        <description lang="gl_ES">Widgets do Tema</description>
+        <description lang="hr_HR">Dodaci za presvlaku</description>
+        <description lang="hu_HU">Kinézet miniprogram</description>
+        <description lang="it_IT">Skin widgets</description>
+        <description lang="ko_KR">스킨 위젯</description>
+        <description lang="nl_NL">Skin widgets</description>
+        <description lang="pl_PL">Dodatki Skóry</description>
+        <description lang="pt_PT">Widgets para Temas</description>
+        <description lang="pt_BR">Skin widgets</description>
+        <description lang="sk_SK">Widgety Vzhľadov</description>
+        <description lang="sv_SE">Skal widgetar</description>
+        <description lang="zh_CN">皮肤微件</description>
+        <disclaimer lang="be_BY">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="de_DE">Besuche für mehr Informationen die Wiki-Seite oder das XBMC-Forum</disclaimer>
+        <disclaimer lang="el_GR">Για πληροφορίες επισκεφθείτε τη σελίδα wiki ή το forum του XBMC.</disclaimer>
+        <disclaimer lang="en_GB">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="es_ES">Para más información, visite el wiki o los foros de XBMC.</disclaimer>
+        <disclaimer lang="fr_FR">Pour plus d'information, visitez la page du Wiki ou dur forum XBMC.</disclaimer>
+        <disclaimer lang="gl_ES">Para máis información visite a páxina wiki ou o foro do XBMC.</disclaimer>
+        <disclaimer lang="hr_HR">Za više informacija posjetite wiki stranicu ili XBMC forum.</disclaimer>
+        <disclaimer lang="it_IT">Per le informazioni visita la pagina wiki o il forum</disclaimer>
+        <disclaimer lang="ko_KR">위키 페이지나 XBMC 포럼에서 추가 정보를 확인하세요.</disclaimer>
+        <disclaimer lang="nl_NL">Bezoek voor informatie de wiki pagina of het XBMC forum.</disclaimer>
+        <disclaimer lang="pl_PL">Odwiedź stronę wiki lub forum XBMC by znaleźć więcej informacji.</disclaimer>
+        <disclaimer lang="pt_PT">Para mais informação, visite a página wiki ou o fórum do XBMC.</disclaimer>
+        <disclaimer lang="pt_BR">Para informações visite o página do wiki ou fórum XBMC.org.</disclaimer>
+        <disclaimer lang="sv_SE">För information, besök wiki-sidan eller XBMC forumet.</disclaimer>
+        <disclaimer lang="zh_CN">访问wiki页或XBMC论坛了解更多信息</disclaimer>
+        <platform>all</platform>
+        <license>GPL-2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=142389</forum>
+        <source>https://github.com/XBMC-Addons/service.skin.widgets</source>
+        <email></email>
+		<news>Updated with changes required for Kodi 19 / Python 3 by scott967
+matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+    </extension>
+</addon>
+
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.6" provider-name="Kodinerds">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
+        <dir>
+            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="21.9.9" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/pegasus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="19.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/leia/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/leia/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="17.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/krypton/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/krypton/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="16.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/jarvis/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/jarvis/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/jarvis/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="15.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/isengard/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/isengard/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/isengard/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="14.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/helix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/helix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/helix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="13.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/gotham/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/gotham/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/gotham/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Addon repository of the Kodinerds Community</summary>
+        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+        <summary lang="de">Addon Repository der Kodinerds Community</summary>
+        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <summary lang="pl">Repozytorium dodatków społeczności Kodinerds</summary>
+        <description lang="pl">„Nerdsrepo” to repozytorium niemieckiej społeczności Kodi „Kodinerds” (www.kodinerds.net). Większość hostowanych tutaj dodatków jest aktywnie rozwijana i wspierana przez członków społeczności. Nerdsrepo to nieoficjalne repozytorium oprogramowania Kodi Media Center.</description>
+        <disclaimer/>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon
+  id="vfs.libarchive"
+  version="21.0.0"
+  name="Archive support"
+  provider-name="spiff">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.instance.vfs" minversion="3.0.1" version="3.0.1"/></requires>
+  <!-- Note: .rar is partially supported by this addon, but since the other
+             addon vfs.rar also supports it, support is removed here. -->
+  <extension
+    point="kodi.vfs"
+    protocols="archive"
+    extensions=".7z|.tar.gz|.tar.bz2|.tar.xz|.zip|.tgz|.tbz2|.gz|.bz2|.xz|.tar"
+    files="true"
+    directories="true"
+    filedirectories="true"
+    encodedhostname="true"
+    library_linux="vfs.libarchive.so.21.0.0" />
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/xbmc/vfs.libarchive</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+    <summary lang="ca_ES">Complement d&apos;arxiu i compressió multi-format</summary>
+    <summary lang="da_DK">Multiformat arkiverings- og komprimerings-add-on</summary>
+    <summary lang="de_DE">Addon zur Verarbeitung mehrerer Archivformate</summary>
+    <summary lang="en_GB">Multi-format archive and compression addon</summary>
+    <summary lang="es_MX">Complemento de compresión y archivado en múltiples formatos</summary>
+    <summary lang="ko_KR">다중 형식 아카이브 및 압축 애드온</summary>
+    <summary lang="pl_PL">Dodatek wieloformatowych archiwów i kompresji</summary>
+    <summary lang="pt_BR">Add-on para arquivos multiformato e compressão</summary>
+    <summary lang="ru_RU">Дополнение для архивирования и сжатия в нескольких форматах</summary>
+    <summary lang="zh_CN">多格式文档和压缩插件</summary>
+    <description lang="ca_ES">Aquest complement utilitza la llibreria libarchive per llegir diversos formats d&apos;arxiu i compressió.[CR][CR]Els formats compatibles són:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="da_DK">Dette add-on anvender libarchive-biblioteket til at læse en række arkiv- og komprimeringsformater.[CR][CR]Understøttede formater er:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz , tgz, tbz2, xz, zip</description>
+    <description lang="de_DE">Dieses Addon verwendet die Bibliothek libarchive, um verschiedene Archiv- und Komprimierungsformate zu verarbeiten.[CR][CR]Unterstützte Formate sind:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="en_GB">This add-on uses the libarchive library to read a variety of archive and compression formats.[CR][CR]Supported formats are:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="es_MX">Este complemento utiliza libarchive para leer una variedad de formatos de archivado y compresión. [CR][CR]Los formatos soportados son:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="ko_KR">이 추가 기능은 libarchive 라이브러리를 사용하여 다양한 아카이브 및 압축 형식을 읽습니다.[CR][CR]지원되는 형식은 다음과 같습니다.[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz , tgz, tbz2, xz, zip</description>
+    <description lang="pl_PL">Dodatek ten używa biblioteki libarchive do odczytu różnych formatów archiwów i kompresji.[CR][CR]Obsługiwane formaty to:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="pt_BR">Este add-on usa a biblioteca libarchive para ler uma variedade de arquivos e formatos de compressão.[CR][CR]Os formatos suportados são:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="ru_RU">Это дополнение использует библиотеку libarchive для чтения различных форматов архивов и сжатия.[CR][CR]Поддерживаемые форматы:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="zh_CN">此插件使用 libarchive 库读取各种文档和压缩格式。[CR][CR]支持的格式有：[CR]7z、bz2、gz、tar、tar.bz2、tar.gz、tar.xz、tgz、tbz2、xz、zip</description>
+  </extension>
 </addon></addons>
