@@ -682,47 +682,6 @@
   </extension>
 </addon>
 
-<addon id="repository.addons.paco8" name="Addons by Paco8" version="1.0.0" provider-name="Paco8">
-	<extension point="xbmc.addon.repository">
-	<dir>
-		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo</datadir>
-	</dir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Addons by Paco8</summary>
-		<description></description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-		<assets>
-		<icon>icon.jpg</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
-  <extension point="xbmc.addon.repository" name="SlyGuy Repository">
-    <dir>
-      <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
-      <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
-      <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
-    </dir>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
-    <license></license>
-    <language></language>
-    <website></website>
-    <news></news>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="service.skin.widgets" name="Skin Widgets" version="0.0.35" provider-name="Martijn, phil65, scott967">
     <requires>
         <import addon="xbmc.json" version="12.0.0"/>
@@ -988,5 +947,48 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
     <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
     <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
     <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
+  </extension>
+</addon>
+
+<addon id="repository.addons.paco8" name="Addons by Paco8" version="1.0.0" provider-name="Paco8">
+	<extension point="xbmc.addon.repository">
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons by Paco8</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<description lang="en">Addons by Paco8</description>
+		<description lang="pl">Dodatki Paco8</description>
+		<assets>
+		<icon>icon.jpg</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository">
+    <dir>
+      <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <description lang="pl">Dodatki SlyGuy (slyguy.uk)</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon></addons>

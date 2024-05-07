@@ -10,13 +10,13 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <description lang="pl">Dodatki SlyGuy (slyguy.uk)</description>
     <license></license>
     <language></language>
     <website></website>
     <news></news>
     <assets>
       <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
     </assets>
   </extension>
 </addon>

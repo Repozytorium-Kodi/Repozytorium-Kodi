@@ -12,6 +12,8 @@
 		<description></description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
+		<description lang="en">Addons by Paco8</description>
+		<description lang="pl">Dodatki Paco8</description>
 		<assets>
 		<icon>icon.jpg</icon>
 		</assets>
