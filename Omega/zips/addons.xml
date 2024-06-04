@@ -989,5 +989,6 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
     <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
     <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
   </extension>
+</addon>
 <addons></addons>
 
