@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="pvr.waipu"
-  version="21.5.0"
+  version="21.8.0"
   name="waipu.tv PVR Client"
   provider-name="flubshi">
   <requires>
@@ -18,7 +18,7 @@
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.waipu.so.21.5.0"/>
+    library_linux="pvr.waipu.so.21.8.0"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GNU General Public License. Version 2, June 1991</license>
@@ -33,7 +33,7 @@
       <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
     </assets>
     <news>
-- Allow restart of program that is not running anymore but started max 1 hour in the past
+- Add support for play position (author: quthla)
     </news>
     <summary lang="da_DK">waipu.tv PVR-klient</summary>
     <summary lang="de_DE">waipu.tv PVR Client</summary>
