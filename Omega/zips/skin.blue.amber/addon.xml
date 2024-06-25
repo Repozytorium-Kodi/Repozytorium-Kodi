@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.blue.amber" version="4.0.0" name="Amber Blue" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
+<addon id="skin.amber" version="4.0.0" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.favourites" version="7.1.1" />
@@ -37,7 +37,7 @@
 		<summary lang="en_GB">No bloatware, just your media with an easy to navigate interface</summary>
 		<summary lang="en_NZ">No bloatware, just your media with an easy to navigate interface</summary>
 		<summary lang="en_US">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="es_ES">Sin excesos, solo su contenido con una interfaz fácil de navegar</summary>
+		<summary lang="es_ES">Sin bloatware, solo tu contenido con una interfaz fácil de navegar</summary>
 		<summary lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar</summary>
 		<summary lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega</summary>
 		<summary lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia</summary>
@@ -46,7 +46,6 @@
 		<summary lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti</summary>
 		<summary lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare</summary>
 		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
-		<summary lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem</summary>
 		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
 		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
 		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
@@ -56,7 +55,7 @@
 		<description lang="en_GB">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
 		<description lang="en_NZ">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
 		<description lang="en_US">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="es_ES">Sin excesos, sólo su contenido con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
+		<description lang="es_ES">Sin bloatware, solo tus medios con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
 		<description lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de las máscaras Mediastream y Aeon.</description>
 		<description lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega.[CR]Kasutab mõnda Mediastream ja Aeon rüü tekstuuri.</description>
 		<description lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia. [CR]Käyttää jonkin verran kuvamateriaalia Mediastream- ja Aeon-ulkoasuista.</description>
@@ -65,7 +64,6 @@
 		<description lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti.[CR]Notar ýmsar áferðir úr Mediastream og Aeon skinnunum.</description>
 		<description lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare.[CR]Usa alcune texture delle skin Mediastream e Aeon.</description>
 		<description lang="nl_NL">Geen bloatware, alleen jouw media met een makkelijk te navigeren interface.[CR]Gebruikt sommige texturen van de Mediastream- en Aeonontwerpen.</description>
-		<description lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem.[CR]Wykorzystuje niektóre tekstury ze skórek Mediastream i Aeon.</description>
 		<description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
 		<description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
 		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>

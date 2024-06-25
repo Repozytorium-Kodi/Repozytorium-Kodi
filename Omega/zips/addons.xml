@@ -848,60 +848,7 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
   </extension>
 </addon>
 
-<addon
-  id="inputstream.adaptive"
-  version="21.4.9"
-  name="InputStream Adaptive"
-  provider-name="peak3d, Team Kodi">
-  <requires>
-<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
-<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/>
-<import addon="kodi.binary.instance.videocodec" minversion="2.1.0" version="2.1.0"/></requires>
-  <extension
-    point="kodi.inputstream"
-    name="adaptive"
-    extension=""
-    tags="true"
-    listitemprops="license_type|license_key|license_url|license_url_append|license_data|license_flags|manifest_type|server_certificate|manifest_update_parameter|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|internal_cookies|manifest_config"
-    library_linux="inputstream.adaptive.so.21.4.9"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>linux</platform>
-	<license>GPL-2.0-or-later</license>
-	<source>https://github.com/xbmc/inputstream.adaptive</source>
-	<assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
-    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
-    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
-    <summary lang="en_GB">InputStream client for adaptive streams</summary>
-    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
-    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
-    <summary lang="hr_HR">InputStream klijent za adaptivne tokove</summary>
-    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
-    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
-    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
-    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
-    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
-    <description lang="da_DK">InputStream-klient til adaptive streams</description>
-    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
-    <description lang="en_GB">InputStream client for adaptive streams. Common streaming protocols such as MPEG-DASH, HLS and Microsoft Smooth Streaming are supported.[CR][CR]The add-on also has support for DRM protected streams, such as Google Widevine, Microsoft PlayReady and others.[CR][CR]For documentation visit: https://github.com/xbmc/inputstream.adaptive</description>
-    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
-    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
-    <description lang="hr_HR">InputStream klijent za adaptivne tokove</description>
-    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
-    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
-    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
-    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
-  </extension>
-</addon>
-
-<addon id="skin.blue.amber" version="4.0.0" name="Amber Blue" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
+<addon id="skin.amber" version="4.0.0" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
 	<requires>
 		<import addon="xbmc.gui" version="5.17.0" />
 		<import addon="script.favourites" version="7.1.1" />
@@ -939,7 +886,7 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
 		<summary lang="en_GB">No bloatware, just your media with an easy to navigate interface</summary>
 		<summary lang="en_NZ">No bloatware, just your media with an easy to navigate interface</summary>
 		<summary lang="en_US">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="es_ES">Sin excesos, solo su contenido con una interfaz fácil de navegar</summary>
+		<summary lang="es_ES">Sin bloatware, solo tu contenido con una interfaz fácil de navegar</summary>
 		<summary lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar</summary>
 		<summary lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega</summary>
 		<summary lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia</summary>
@@ -948,7 +895,6 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
 		<summary lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti</summary>
 		<summary lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare</summary>
 		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
-		<summary lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem</summary>
 		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
 		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
 		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
@@ -958,7 +904,7 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
 		<description lang="en_GB">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
 		<description lang="en_NZ">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
 		<description lang="en_US">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="es_ES">Sin excesos, sólo su contenido con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
+		<description lang="es_ES">Sin bloatware, solo tus medios con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
 		<description lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de las máscaras Mediastream y Aeon.</description>
 		<description lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega.[CR]Kasutab mõnda Mediastream ja Aeon rüü tekstuuri.</description>
 		<description lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia. [CR]Käyttää jonkin verran kuvamateriaalia Mediastream- ja Aeon-ulkoasuista.</description>
@@ -967,10 +913,62 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
 		<description lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti.[CR]Notar ýmsar áferðir úr Mediastream og Aeon skinnunum.</description>
 		<description lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare.[CR]Usa alcune texture delle skin Mediastream e Aeon.</description>
 		<description lang="nl_NL">Geen bloatware, alleen jouw media met een makkelijk te navigeren interface.[CR]Gebruikt sommige texturen van de Mediastream- en Aeonontwerpen.</description>
-		<description lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem.[CR]Wykorzystuje niektóre tekstury ze skórek Mediastream i Aeon.</description>
 		<description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
 		<description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
 		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
 		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
 	</extension>
+</addon>
+
+<addon
+  id="inputstream.adaptive"
+  version="21.4.10"
+  name="InputStream Adaptive"
+  provider-name="peak3d, Team Kodi">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/>
+<import addon="kodi.binary.instance.videocodec" minversion="2.1.0" version="2.1.0"/></requires>
+  <extension
+    point="kodi.inputstream"
+    name="adaptive"
+    extension=""
+    tags="true"
+    listitemprops="license_type|license_key|license_url|license_url_append|license_data|license_flags|manifest_type|server_certificate|manifest_update_parameter|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|internal_cookies|manifest_config"
+    library_linux="inputstream.adaptive.so.21.4.10"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+	<license>GPL-2.0-or-later</license>
+	<source>https://github.com/xbmc/inputstream.adaptive</source>
+	<assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
+    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
+    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
+    <summary lang="hr_HR">InputStream klijent za adaptivne tokove</summary>
+    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
+    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
+    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
+    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
+    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
+    <description lang="da_DK">InputStream-klient til adaptive streams</description>
+    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
+    <description lang="en_GB">InputStream client for adaptive streams. Common streaming protocols such as MPEG-DASH, HLS and Microsoft Smooth Streaming are supported.[CR][CR]The add-on also has support for DRM protected streams, such as Google Widevine, Microsoft PlayReady and others.[CR][CR]For documentation visit: https://github.com/xbmc/inputstream.adaptive</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
+    <description lang="hr_HR">InputStream klijent za adaptivne tokove</description>
+    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
+    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
+    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
+    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
+  </extension>
 </addon></addons>
