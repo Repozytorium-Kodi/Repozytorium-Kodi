@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.6" provider-name="Kodinerds">
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.7" provider-name="Kodinerds">
     <requires>
         <import addon="xbmc.addon" version="12.0.0"/>
     </requires>
@@ -11,9 +11,9 @@
             <hashes>false</hashes>
         </dir>
         <dir minversion="21.9.9" maxversion="22.9.0">
-            <info compressed="true">https://repo.kodinerds.net/addons/pegasus/addons.xml</info>
-            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
-            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <info compressed="true">https://repo.kodinerds.net/addons/piers/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/piers/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/piers/zip/</datadir>
             <hashes>false</hashes>
         </dir>
         <dir minversion="21.0.0" maxversion="22.9.0">
@@ -76,8 +76,6 @@
         <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
         <summary lang="de">Addon Repository der Kodinerds Community</summary>
         <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
-        <summary lang="pl">Repozytorium dodatków społeczności Kodinerds</summary>
-        <description lang="pl">„Nerdsrepo” to repozytorium niemieckiej społeczności Kodi „Kodinerds” (www.kodinerds.net). Większość hostowanych tutaj dodatków jest aktywnie rozwijana i wspierana przez członków społeczności. Nerdsrepo to nieoficjalne repozytorium oprogramowania Kodi Media Center.</description>
         <disclaimer/>
         <platform>all</platform>
         <assets>
