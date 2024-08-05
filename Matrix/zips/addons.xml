@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons><addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.3" provider-name="Repozytorium-Kodi">
+<addons><addon id="Repozytorium-Kodi" name="Repozytorium-Kodi" version="1.0.4" provider-name="Repozytorium-Kodi">
     <extension point="xbmc.addon.repository" name="Repozytorium-Kodi">
+        <dir minversion="21.9.1">
+            <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Piers/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Piers/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Piers/zips/</datadir>
+        </dir>
         <dir minversion="20.9.1">
             <info>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Repozytorium-Kodi/Repozytorium-Kodi/main/Omega/zips/addons.xml.md5</checksum>
@@ -25,6 +30,25 @@
         <assets>
             <icon>resources/icon.jpg</icon>
             <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="repository.mtr81" name="mtr81" version="1.0" provider-name="lg">
+    <extension point="xbmc.addon.repository" name="mtr81">
+        <dir>
+            <info compressed="false">https://mtr81.github.io/kodi_addons/addons/addons.xml</info>
+            <checksum>https://mtr81.github.io/kodi_addons/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://mtr81.github.io/kodi_addons/addons/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Wtyczki do odtwarzacza Kodi (v.19,20)</summary>
+        <description>Wtyczki do odtwarzacza Kodi (v.19,20)</description>
+        <platform>all</platform>
+        <assets>
+            <icon></icon>
+            <fanart></fanart>
         </assets>
     </extension>
 </addon>
@@ -96,21 +120,139 @@
 	</extension>
 </addon>
 
+<addon	id="script.skin.helper.colorpicker"
+		name="Skin Helper Service ColorPicker"
+		version="2.0.3"
+		provider-name="marcelveldt,sualfred and others">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.pil" version="5.1.0"/>
+	</requires>
+	<extension point="xbmc.python.library" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">Colorpicker for Kodi Skins. Part of Skin Helper Suite</summary>
+		<description lang="en_GB">Colorpicker for Kodi Skins. Part of Skin Helper Suite</description>
+		<summary lang="pl_PL">Colorpicker dla skórek Kodi. Część pakietu Skin Helper Suite.</summary>
+		<description lang="pl_PL">Colorpicker dla skórek Kodi. Część pakietu Skin Helper Suite.</description>
+		<platform>all</platform>
+		<license>GPL-2.0</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<source>https://github.com/kodi-community-addons/script.skin.helper.colorpicker</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon
+  id="inputstream.ffmpegdirect"
+  version="21.3.5"
+  name="Inputstream FFmpeg Direct"
+  provider-name="Ross Nicholson">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/></requires>
+  <extension
+    point="kodi.inputstream"
+    name="ffmpegdirect"
+    extension=""
+    tags="true"
+    listitemprops="program_number|stream_mode|open_mode|manifest_type|default_url|is_realtime_stream|playback_as_live|programme_start_time|programme_end_time|catchup_url_format_string|catchup_url_near_live_format_string|catchup_buffer_start_time|catchup_buffer_end_time|catchup_buffer_offset|catchup_terminates|catchup_granularity|timezone_shift|default_programme_duration|programme_catchup_id"
+    library_linux="inputstream.ffmpegdirect.so.21.3.5" />
+  <extension point="xbmc.service" library="resources/lib/runner.py"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/xbmc/inputstream.ffmpegdirect</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="ca_ES">Client InputStream per a fluxos FFmpeg (libavformat)</summary>
+    <summary lang="da_DK">InputStream-klient til FFmpeg-streams (libavformat)</summary>
+    <summary lang="de_DE">InputStream-Client für FFmpeg-Streams (libavformat)</summary>
+    <summary lang="en_GB">InputStream Client for FFmpeg streams (libavformat)</summary>
+    <summary lang="es_MX">Cliente InputStream para flujos FFmpeg (libavformat)</summary>
+    <summary lang="fi_FI">InputStream asiakasohjelma FFmpeg suoratoistoille (libavformat)</summary>
+    <summary lang="ko_KR">FFmpeg 스트림용 InputStream 클라이언트(libavformat)</summary>
+    <summary lang="pl_PL">Klient InputStream dla strumieni FFmpeg (libavformat)</summary>
+    <summary lang="ru_RU">InputStream клиент для FFmpeg потоков (libavformat)</summary>
+    <summary lang="zh_CN">FFmpeg 流的 InputStream 客户端（libavformat）</summary>
+    <description lang="ca_ES">Client InputStream per a fluxos que es poden obrir mitjançant el libavformat de FFmpeg o el cURL de Kodi. S’admeten formats de flux comuns, com ara TS simple, HLS i DASH (sense DRM), així com molts altres.[CR][CR]El complement també és compatible amb els serveis Archive/Catchup , on hi ha una finestra de reproducció (normalment en dies) i pot canviar de temps en aquest interval.[CR][CR]Per a la documentació, visiteu: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="da_DK">InputStream-klient til streams, der kan åbnes af enten FFmpeg&apos;s libavformat eller Kodi&apos;s cURL. Almindelige streamformater som f.eks. almindelig TS, HLS og DASH (uden DRM) understøttes såvel som mange andre.[CR][CR]Add-on&apos;et har også understøttelse af Arkiv-/Catchup-tjenester, hvor der er et afspilningsvindue (normalt i dage) og kan tidsforskyde på tværs af dette spænd.[CR][CR]For dokumentation besøg: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="de_DE">InputStream-Client für Streams, die entweder mit dem libav-Format von FFmpeg oder mit cURL von Kodi geöffnet werden können. Gängige Stream-Formate wie TS, HLS und DASH (ohne DRM) werden ebenso unterstützt wie viele andere.[CR][CR]Das Addon unterstützt auch Archiv-/Aufholdienste, bei denen Wiedergabefenster vorhanden sind (normalerweise in Tagen), und kann über diesen Zeitraum hinweg eine Zeitverschiebung bewirken.[CR][CR]Dokumentation unter: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="en_GB">InputStream Client for streams that can be opened by either FFmpeg&apos;s libavformat or Kodi&apos;s cURL. Common stream formats such as plain TS, HLS and DASH (without DRM) are supported as well as many others.[CR][CR]The addon also has support for Archive/Catchup services where there is a replay windows (usually in days) and can timeshift across that span.[CR][CR]For documenation visit: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="es_MX">Cliente InputStream para flujos de datos que pueden abrirse con libavformat de FFmpeg o cURL integrado en Kodi. Formatos de flujo comunes tales como TS simple, HLS y DASH (sin DRM) también están soportados, al igual que muchos otros.[CR][CR]El complemento también soporta servicios Archive/Catchup donde hay un espacio de repetición (usualmente en días) y se puede mover a través del tiempo de dicho espacio.[CR][CR]Para documentación visita: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="fi_FI">InputStream asiakasohjelma suoratoistoille, jotka voidaan avata joko FFmpegin libavformaatilla tai Kodin cURL:llä. Yleisiä suoratoistomuotoja, kuten tavallinen TS, HLS ja DASH (ilman DRM:ää), tuetaan sekä monia muita.[CR][CR]Lisäosa tukee myös Arkisto-/Catchup-palveluita, joissa on uusintaikkunoita (yleensä päivissä) ja voi siirtyä aikavälillä.[CR][CR]Dokumentaatiot löytyvät osoitteesta: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="ko_KR">FFmpeg의 libavformat 또는 Kodi의 cURL로 열 수 있는 스트림용 InputStream 클라이언트. 일반 TS, HLS 및 DASH(DRM 제외)와 같은 일반적인 스트림 형식은 물론 다른 많은 형식도 지원됩니다.[CR][CR]이 애드온은 재생 창(보통 며칠)이 있는 아카이브/따라잡기 서비스도 지원합니다. 해당 범위에서 타임시프트할 수 있습니다.[CR][CR]문서를 보려면 https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md를 방문하세요</description>
+    <description lang="pl_PL">Klient InputStream dla strumieni, które można otworzyć za pomocą libavformat FFmpeg lub cURL Kodi. Obsługiwane są popularne formaty strumieniowe, takie jak zwykły TS, HLS i DASH (bez DRM), a także wiele innych.[CR][CR]Dodatek obsługuje również usługę archiwizacji, która zapewnia okno powtórek (zazwyczaj w dniach) i może wykonywać przesunięcie czasowe przez ten zakres.[CR][CR]W celu uzyskania dokumentacji odwiedź: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="ru_RU">Клиент InputStream для потоков, которые можно открыть с помощью libavformat от FFmpeg или с помощью Kodi cURL. Поддерживаются основные форматы потоков такие, как простой TS, HLS, DASH (без DRM) и многие другие.[CR][CR]Дополнение также имеет поддержку служб Архива/Перемотки, где есть окна воспроизведения (обычно в днях), которые могут сдвигаться по времени в течение этого промежутка.[CR][CR]Для документации посетите: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+    <description lang="zh_CN">InputStream 客户端，用于可通过 FFmpeg 的 libavformat 或 Kodi 的 cURL 打开的流。支持普通 TS、HLS 和 DASH（无DRM）等常见流格式以及其他许多格式。[CR][CR]该插件还支持有重播窗口（通常以天为单位）的归档/捕获服务，并可以在该时间跨度内进行时光平移。[CR][CR]相关文档请访问：https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
+  </extension>
+</addon>
+
+<addon id="pvr.zattoo"
+       version="21.0.1"
+       name="Zattoo PVR Client"
+       provider-name="trummerjo,rbuehlma">
+  <requires>
+    
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+    <import addon="inputstream.adaptive" minversion="2.4.2"/>
+    <import addon="script.module.inputstreamhelper" version="0.5.8"/>
+  </requires>
+  <extension point="kodi.pvrclient" library_linux="pvr.zattoo.so.21.0.1"/>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="de_DE">Kodi-PVR-Client für Zattoo</summary>
+    <summary lang="en_AU">Kodi's frontend for Zattoo</summary>
+    <summary lang="en_GB">Kodi's frontend for Zattoo</summary>
+    <summary lang="en_NZ">Kodi's frontend for Zattoo</summary>
+    <summary lang="en_US">Kodi's frontend for Zattoo</summary>
+    <description lang="de_DE">PVR-Client für Zattoo. Unterstützt TV &amp; Aufnahmen, TV-Guide (EPG) und Timer.</description>
+    <description lang="en_AU">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="en_GB">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="en_NZ">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <description lang="pl_PL">Interfejs Zattoo; obsługa strumieniowania telewizji na żywo &amp; Nagrania, EPG, Timery</description>
+    <description lang="en_US">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
+    <disclaimer lang="de_DE">Die Autoren sind in keiner Weise verantwortlich für fehlgeschlagene Aufnahmen, falsche Timer, verschwendete Zeit oder andere ungewünschte Effekte.</disclaimer>
+    <disclaimer lang="en_AU">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_GB">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="pl_PL">Autorzy nie ponoszą żadnej odpowiedzialności za nieudane nagrania, nieprawidłowe timery, zmarnowane godziny lub inne niepożądane efekty.</disclaimer>
+    <disclaimer lang="en_NZ">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects.</disclaimer>
+    <disclaimer lang="en_US">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects.</disclaimer>
+    <platform>linux</platform>
+    <license>GPL-2.0-or-later</license>
+    <source>https://github.com/rbuehlma/pvr.zattoo</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon
   id="inputstream.rtmp"
-  version="19.0.1"
+  version="21.1.0"
   name="RTMP Input"
   provider-name="spiff">
   <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.instance.inputstream" minversion="3.0.1" version="3.0.1"/></requires>
+<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/></requires>
   <extension
     point="kodi.inputstream"
     name="rtmp"
     protocols="rtmp|rtmpt|rtmpe|rtmpte|rtmps"
     listitemprops="SWFPlayer|swfurl|PageURL|PlayPath|TcUrl|IsLive|swfvfy"
-    library_linux="inputstream.rtmp.so.19.0.1" />
+    library_linux="inputstream.rtmp.so.21.1.0" />
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
@@ -118,52 +260,6 @@
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>v19.0.1
-- Translation updates by Weblate
-
-v19.0.0
-- Changed test builds to released 'Kodi 19 Matrix'
-- Prepared for new language translation by Weblate
-- Increased version to 19.0.0
-  - With start of Kodi 20 Nexus, takes addon as major the same version number as Kodi.
-    This done to know easier to which Kodi the addon works.
-
-v3.4.0
-- Update: inputstream API 3.0.1
-  - Fix wrong flags bit shift
-
-v3.3.0
-- Update inputstream API 3.0.0
-- Fix and allow use of stream values:
-  - SWFPlayer
-  - swfurl (same as SWFPlayer)
-  - PageURL
-  - PlayPath
-  - TcUrl
-  - IsLive
-  - swfvfy
-
-v3.2.0
-- Matrix API change inputstream API 2.3.4
-- Add german translation
-- Improve debian package build and add test to Travis CI
-
-v3.1.1
-- Bump verion for PPA build Global API 1.2.0 and inputstream API 2.3.1
-
-v3.1.0
-- Matrix API change inputstream API 2.3.1
-- Matrix APi change Global API 1.2.0
-
-v3.0.5
-- Matrix API change to v2.3.0 - Re-release API change
-
-v3.0.4
-- Matrix API change to v2.3.0 - Pass mime type to inputstreams if available
-
-v3.0.3
-- Matrix API change to v2.2.0 - Allows upto 256 streams
-    </news>
     <summary lang="ca_ES">Client per a transmissió RTMP</summary>
     <summary lang="cs_CZ">Klient přenosů RTMP</summary>
     <summary lang="da_DK">Klient til RTMP-streams</summary>
@@ -172,11 +268,9 @@ v3.0.3
     <summary lang="es_ES">Cliente para flujos RTMP</summary>
     <summary lang="es_MX">Cliente para flujos RTMP</summary>
     <summary lang="fi_FI">Asiakaspääte RTMP-mediavirroille</summary>
-    <summary lang="fr_FR">Client pour flux RTMP</summary>
     <summary lang="hr_HR">Klijent za RTMP strujanja</summary>
-    <summary lang="it_IT">Client per stream RTMP</summary>
+    <summary lang="it_IT">Client per flussi RTMP</summary>
     <summary lang="ko_KR">RTMP 스트림용 클라이언트</summary>
-    <summary lang="lv_LV">RTMP straumju klients</summary>
     <summary lang="pl_PL">Klient strumieni RTMP</summary>
     <summary lang="ru_RU">Клиент для трансляции потоков RTMP</summary>
     <summary lang="zh_CN">RTMP 流的客户端</summary>
@@ -188,377 +282,420 @@ v3.0.3
     <description lang="es_ES">El Protocolo de Mensajería en Tiempo Real (RTMP) es un protocolo de red propietario desarrollado por Adobe Inc. para transmitir audio, vídeo y otros datos por Internet desde un servidor de contenido a un reproductor flash.[CR][CR]Este addon implementa el soporte para RTMP en Kodi y para el resto de addons instalados.</description>
     <description lang="es_MX">El Protocolo de Mensajería en Tiempo Real (RTMP) es un protocolo de red propietario desarrollado por Adobe Inc. para transmitir audio, video y otros datos por internet desde un servidor de medios a un reproductor flash.[CR][CR]Este complemento implementa el soporte de reproducción RTMP para Kodi y para cualquier complemento instalado.</description>
     <description lang="fi_FI">Real Time Messaging Protocol (RTMP) on Adoben kehittämä verkkoprotokolla äänen, videon ja muun tiedon siirtoon madiapalvelimen ja Flash-soittimen välillä Internetin välityksellä.[CR][CR]Tämä lisäosa mahdollistaa RTMP-suoratoiston Kodille ja asennetuille lisäosille.</description>
-    <description lang="fr_FR">Le protocole RTMP (Real Time Messaging Protocol) est un protocole réseau propriétaire développé par Adobe Inc. pour transmettre des données audio, vidéo et autres sur Internet d&apos;un serveur multimédia à un lecteur flash.[CR][CR]Ce module complémentaire implémente la prise en charge du streaming RTMP pour Kodi et les modules complémentaires installés.</description>
     <description lang="hr_HR">Protokol slanja poruka u stvarnom vremenu (RTMP) je vlasnički mrežni protokol razvijen od strane Adobe Inc. za odašiljanje zvuka, videa i drugih podataka putem interneta s medijskog poslužitelja prema Flash reproduktoru.[CR][CR]Ovaj dodatak implementira podršku RTMP strujanja za Kodi i instalirane dodatke.</description>
-    <description lang="it_IT">Il Real Time Messaging Protocol (RTMP) è un protocollo di rete proprietario sviluppato da Adobe Inc. per trasmettere audio, video e altri dati su Internet da un server multimediale a un lettore flash.[CR][CR]Questo componente aggiuntivo implementa il supporto dello streaming RTMP per Kodi e per gli Add-on.</description>
+    <description lang="it_IT">Il Real Time Messaging Protocol (RTMP) è un protocollo di rete proprietario sviluppato da Adobe Inc. per trasmettere audio, video e altri dati su Internet da un server multimediale a un lettore flash.[CR][CR]Questo componente aggiuntivo implementa il supporto dello streaming RTMP per Kodi e per gli add-on.</description>
     <description lang="ko_KR">실시간 메시징 프로토콜(RTMP)은 인터넷을 통해 미디어 서버에서 플래시 플레이어로 오디오, 비디오 및 기타 데이터를 전송하기 위해 Adobe Inc.에서 개발한 독점 네트워크 프로토콜입니다.[CR][CR]이 애드온은 Kodi와 설치된 애드온을 위한 RTMP 스트리밍 지원을 구현합니다.</description>
-    <description lang="lv_LV">Real Time Messaging Protocol (RTMP) ir patentēts tīkla protokols, ko izstrādājusi Adobe Inc., lai pārraidītu audio, video un citus datus internetā no multimedijas servera uz Flash atskaņotāju.[CR][CR]Šis papildinājums nodrošina Kodi un to papildinājumus ar RTMP straumēšanas atbalstu.</description>
     <description lang="pl_PL">Protokół RTMP (Real Time Messaging Protocol) to własnościowy protokół sieciowy opracowany przez firmę Adobe Inc. do przesyłania dźwięku, obrazu i innych danych przez Internet z serwera multimediów do odtwarzacza Flash.[CR][CR]Ten dodatek implementuje obsługę przesyłania strumieniowego RTMP dla Kodi i zainstalowanych dodatków.</description>
     <description lang="ru_RU">Протокол обмена сообщениями в реальном времени (The Real Time Messaging Protocol - RTMP) - это запатентованный сетевой протокол, разработанный компанией Adobe Inc. для передачи аудио, видео и других данных через Интернет с медиа-сервера на флеш-плеер.[CR][CR]Это приложение реализует поддержку потоковой передачи RTMP для Kodi и установленных дополнений.</description>
     <description lang="zh_CN">实时消息协议（RTMP）是 Adobe Inc. 开发的一种专有网络协议，用于通过互联网将音频、视频和其他数据从媒体服务器传输到 flash 播放器。[CR][CR]此插件实现对 Kodi 和已安装插件的 RTMP 流支持。</description>
   </extension>
 </addon>
 
+<addon id="service.skin.widgets" name="Skin Widgets" version="0.0.35" provider-name="Martijn, phil65, scott967">
+    <requires>
+        <import addon="xbmc.json" version="12.0.0"/>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.simplejson" version="3.17.0+matrix.2"/>
+    </requires>
+    <extension point="xbmc.service" library="default.py"/>
+	<extension point="xbmc.python.library" library="default.py"/>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="be_BY">Skin widgets</summary>
+        <summary lang="da_DK">Widgets til Skins</summary>
+        <summary lang="de_DE">Skin Widgets</summary>
+        <summary lang="el_GR">Widgets κελύφους</summary>
+        <summary lang="en_GB">Skin widgets</summary>
+        <summary lang="es_ES">Skin widgets</summary>
+        <summary lang="fr_FR">Skin widgets</summary>
+        <summary lang="gl_ES">Widgets do Tema</summary>
+        <summary lang="hr_HR">Dodaci za presvlaku</summary>
+        <summary lang="hu_HU">Kinézet miniprogram</summary>
+        <summary lang="it_IT">Skin widgets</summary>
+        <summary lang="ko_KR">스킨 위젯</summary>
+        <summary lang="nl_NL">Skin widgets</summary>
+        <summary lang="pl_PL">Dodatki Skóry</summary>
+        <summary lang="pt_PT">Widgets para Temas</summary>
+        <summary lang="pt_BR">Skin widgets</summary>
+        <summary lang="sk_SK">Widgety Vzhľadov</summary>
+        <summary lang="sv_SE">Skal widgetar</summary>
+        <summary lang="zh_CN">皮肤微件</summary>
+        <description lang="be_BY">Skin widgets</description>
+        <description lang="da_DK">Widgets til Skins</description>
+        <description lang="de_DE">Skin Widgets</description>
+        <description lang="el_GR">Widgets κελύφους</description>
+        <description lang="en_GB">Skin widgets</description>
+        <description lang="es_ES">Skin widgets</description>
+        <description lang="fr_FR">Skin widgets</description>
+        <description lang="gl_ES">Widgets do Tema</description>
+        <description lang="hr_HR">Dodaci za presvlaku</description>
+        <description lang="hu_HU">Kinézet miniprogram</description>
+        <description lang="it_IT">Skin widgets</description>
+        <description lang="ko_KR">스킨 위젯</description>
+        <description lang="nl_NL">Skin widgets</description>
+        <description lang="pl_PL">Dodatki Skóry</description>
+        <description lang="pt_PT">Widgets para Temas</description>
+        <description lang="pt_BR">Skin widgets</description>
+        <description lang="sk_SK">Widgety Vzhľadov</description>
+        <description lang="sv_SE">Skal widgetar</description>
+        <description lang="zh_CN">皮肤微件</description>
+        <disclaimer lang="be_BY">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="de_DE">Besuche für mehr Informationen die Wiki-Seite oder das XBMC-Forum</disclaimer>
+        <disclaimer lang="el_GR">Για πληροφορίες επισκεφθείτε τη σελίδα wiki ή το forum του XBMC.</disclaimer>
+        <disclaimer lang="en_GB">For information visit the wiki page or XBMC forum.</disclaimer>
+        <disclaimer lang="es_ES">Para más información, visite el wiki o los foros de XBMC.</disclaimer>
+        <disclaimer lang="fr_FR">Pour plus d'information, visitez la page du Wiki ou dur forum XBMC.</disclaimer>
+        <disclaimer lang="gl_ES">Para máis información visite a páxina wiki ou o foro do XBMC.</disclaimer>
+        <disclaimer lang="hr_HR">Za više informacija posjetite wiki stranicu ili XBMC forum.</disclaimer>
+        <disclaimer lang="it_IT">Per le informazioni visita la pagina wiki o il forum</disclaimer>
+        <disclaimer lang="ko_KR">위키 페이지나 XBMC 포럼에서 추가 정보를 확인하세요.</disclaimer>
+        <disclaimer lang="nl_NL">Bezoek voor informatie de wiki pagina of het XBMC forum.</disclaimer>
+        <disclaimer lang="pl_PL">Odwiedź stronę wiki lub forum XBMC by znaleźć więcej informacji.</disclaimer>
+        <disclaimer lang="pt_PT">Para mais informação, visite a página wiki ou o fórum do XBMC.</disclaimer>
+        <disclaimer lang="pt_BR">Para informações visite o página do wiki ou fórum XBMC.org.</disclaimer>
+        <disclaimer lang="sv_SE">För information, besök wiki-sidan eller XBMC forumet.</disclaimer>
+        <disclaimer lang="zh_CN">访问wiki页或XBMC论坛了解更多信息</disclaimer>
+        <platform>all</platform>
+        <license>GPL-2.0</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=142389</forum>
+        <source>https://github.com/XBMC-Addons/service.skin.widgets</source>
+        <email></email>
+		<news>Updated with changes required for Kodi 19 / Python 3 by scott967
+matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+		</assets>
+    </extension>
+</addon>
+
 <addon
-  id="inputstream.ffmpegdirect"
-  version="19.0.3"
-  name="Inputstream FFmpeg Direct"
-  provider-name="Ross Nicholson">
+  id="vfs.libarchive"
+  version="21.0.0"
+  name="Archive support"
+  provider-name="spiff">
   <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
-<import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.inputstream" minversion="3.0.1" version="3.0.1"/></requires>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.instance.vfs" minversion="3.0.1" version="3.0.1"/></requires>
+  <!-- Note: .rar is partially supported by this addon, but since the other
+             addon vfs.rar also supports it, support is removed here. -->
   <extension
-    point="kodi.inputstream"
-    name="ffmpegdirect"
-    extension=""
-    tags="true"
-    listitemprops="program_number|stream_mode|open_mode|manifest_type|default_url|is_realtime_stream|playback_as_live|programme_start_time|programme_end_time|catchup_url_format_string|catchup_url_near_live_format_string|catchup_buffer_start_time|catchup_buffer_end_time|catchup_buffer_offset|catchup_terminates|catchup_granularity|timezone_shift|default_programme_duration|programme_catchup_id"
-    library_linux="inputstream.ffmpegdirect.so.19.0.3" />
-  <extension point="xbmc.service" library="resources/lib/runner.py"/>
+    point="kodi.vfs"
+    protocols="archive"
+    extensions=".7z|.tar.gz|.tar.bz2|.tar.xz|.zip|.tgz|.tbz2|.gz|.bz2|.xz|.tar"
+    files="true"
+    directories="true"
+    filedirectories="true"
+    encodedhostname="true"
+    library_linux="vfs.libarchive.so.21.0.0" />
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
-    <source>https://github.com/xbmc/inputstream.ffmpegdirect</source>
+    <source>https://github.com/xbmc/vfs.libarchive</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+    </assets>
+    <summary lang="ca_ES">Complement d&apos;arxiu i compressió multi-format</summary>
+    <summary lang="da_DK">Multiformat arkiverings- og komprimerings-add-on</summary>
+    <summary lang="de_DE">Addon zur Verarbeitung mehrerer Archivformate</summary>
+    <summary lang="en_GB">Multi-format archive and compression addon</summary>
+    <summary lang="es_MX">Complemento de compresión y archivado en múltiples formatos</summary>
+    <summary lang="ko_KR">다중 형식 아카이브 및 압축 애드온</summary>
+    <summary lang="pl_PL">Dodatek wieloformatowych archiwów i kompresji</summary>
+    <summary lang="pt_BR">Add-on para arquivos multiformato e compressão</summary>
+    <summary lang="ru_RU">Дополнение для архивирования и сжатия в нескольких форматах</summary>
+    <summary lang="zh_CN">多格式文档和压缩插件</summary>
+    <description lang="ca_ES">Aquest complement utilitza la llibreria libarchive per llegir diversos formats d&apos;arxiu i compressió.[CR][CR]Els formats compatibles són:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="da_DK">Dette add-on anvender libarchive-biblioteket til at læse en række arkiv- og komprimeringsformater.[CR][CR]Understøttede formater er:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz , tgz, tbz2, xz, zip</description>
+    <description lang="de_DE">Dieses Addon verwendet die Bibliothek libarchive, um verschiedene Archiv- und Komprimierungsformate zu verarbeiten.[CR][CR]Unterstützte Formate sind:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="en_GB">This add-on uses the libarchive library to read a variety of archive and compression formats.[CR][CR]Supported formats are:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="es_MX">Este complemento utiliza libarchive para leer una variedad de formatos de archivado y compresión. [CR][CR]Los formatos soportados son:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="ko_KR">이 추가 기능은 libarchive 라이브러리를 사용하여 다양한 아카이브 및 압축 형식을 읽습니다.[CR][CR]지원되는 형식은 다음과 같습니다.[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz , tgz, tbz2, xz, zip</description>
+    <description lang="pl_PL">Dodatek ten używa biblioteki libarchive do odczytu różnych formatów archiwów i kompresji.[CR][CR]Obsługiwane formaty to:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="pt_BR">Este add-on usa a biblioteca libarchive para ler uma variedade de arquivos e formatos de compressão.[CR][CR]Os formatos suportados são:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="ru_RU">Это дополнение использует библиотеку libarchive для чтения различных форматов архивов и сжатия.[CR][CR]Поддерживаемые форматы:[CR]7z, bz2, gz, tar, tar.bz2, tar.gz, tar.xz, tgz, tbz2, xz, zip</description>
+    <description lang="zh_CN">此插件使用 libarchive 库读取各种文档和压缩格式。[CR][CR]支持的格式有：[CR]7z、bz2、gz、tar、tar.bz2、tar.gz、tar.xz、tgz、tbz2、xz、zip</description>
+  </extension>
+</addon>
+
+<addon id="repository.addons.paco8" name="Addons by Paco8" version="1.0.0" provider-name="Paco8">
+	<extension point="xbmc.addon.repository">
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/Paco8/kodi-repo/master/mini-repo</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons by Paco8</summary>
+		<description></description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<description lang="en">Addons by Paco8</description>
+		<description lang="pl">Dodatki Paco8</description>
+		<assets>
+		<icon>icon.jpg</icon>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="repository.slyguy" name="SlyGuy Repository" provider-name="SlyGuy" version="0.0.9">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository">
+    <dir>
+      <info compressed="false">https://slyguy.uk/.repo/repository.slyguy/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/repository.slyguy/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/repository.slyguy/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <description lang="pl">Dodatki SlyGuy (slyguy.uk)</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
     <assets>
       <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
     </assets>
-    <news>
-v19.0.3
-- Revert: Update source URL to kodi mirror
-
-v19.0.2
-- Update source URL to kodi mirror
-
-v19.0.1
-- Translations updates from Weblate
-
-v19.0.0
-- Changed test builds to released 'Kodi 19 Matrix'
-- Increased version to 19.0.0
-  - With start of Kodi 20 Nexus, takes addon as major the same version number as Kodi.
-    This done to know easier to which Kodi the addon works.
-
-v1.21.8
-Translations updates from Weblate
-	- am_et, bs_ba, cy_gb, es_ar, eu_es, fa_ir, ml_in, mn_mn, mt_mt, my_mm, ro_md, si_lk, ta_in, tg_tj, uk_ua, uz_uz
-
-v1.21.7
-- Translations updates from Weblate
-	- de_de, pl_pl
-
-v1.21.6
-- Translations updates from Weblate
-	- da_dk
-
-v1.21.5
-Translations updates from Weblate
-	- he_il, zh_cn
-
-v1.21.4
-- Workaround/hack for incorrect program change detection for catchup streams
-- Simplify program number property logic
-- Language update from Weblate
-
-v1.21.3
-- Fixed: fix hls bitrate selection
-
-v1.21.2
-- Fixed: Allow timezone shift when live URLs have placeholders
-
-v1.21.1
-- Fixed: remove workaround for ffmpeg deprecated function on windowsstore
-- Fixed: Replace deprecated av_init_packet() from ffmpeg
-
-v1.21.0
-- Update: FFmpeg to 4.4
-- Update: Update gas preprocessor for ffmpeg4.4
-- Fixed: Ignore deprecation warning as errors for ffmpegs av_init_packet() for windowsstore
-
-v1.20.1
-- Fixed: release version fix
-
-v1.20.0
-- Update: FFmpeg to 4.3.2
-- Added: If open_mode is default make sure the right protocols default to open with ffmpeg
-
-v1.19.4
-- Fixed: Fix locking on EOF detection of terminating catchup stream by using std:recursive_mutex
-
-v1.19.3
-- Update: move verbose playback timeshift logging to debug level
-- Update: Update cmakelists to reference FFMPEGDIRECT at build time
-
-v1.19.2
-- Update: Demuxer additions from kodi
-
-v1.19.1
-- Fixed: Ensure all values in GetTimes() default to zero
-
-v1.19.0
-- Added: FFmpeg patch for satip improvements
-- Added: SafeLocaltime and custom catchup timestamp formats
-- Added: Now timestamp and custom timestamp format for live catchup URL
-- Added: Use curl for mingw package downloads
-
-v1.18.2
-- Update: Redact inputstream property URLs when logged
-
-v1.18.1
-- Update: Add temporary ffmpeg patch for embedded EIT (EPG) data in mepgts streams
-
-v1.18.0
-- Update: inputstream API 3.0.1
-  - Fix wrong flags bit shift
-
-v1.17.0
-- Update: inputstream API 3.0.0
-
-v1.16.0
-- Update: Inputstream API 2.3.4
-- Added: German translation
-- Added: Debian build test to Travis CI
-
-v1.15.5
-- Update: Use add-on supplied StringUtils and remove local version
-- Update: Remove local threading code and use addon supplied instead
-- Update: Use new addon supplied CEndTime class based on chrono
-- Update: Add autoreconf step to lib zvbi
-
-v1.15.4
-- Update: Remove p8-platforms and add local StringUtils for cpp17
-- Update: Nettle patch for xcode 12
-
-v1.15.3
-- Update: gnutls 3.6.15 and nettle 3.6 bump
-
-v1.15.2
-- Update: bump to fix version number
-
-v1.15.1
-- Fixed: Use correct index for streams using a program number, fixes EIT data embedded in streams
-- Update: FFmpeg to 4.3.1
-
-v1.15.0
-- Added: Add fast open for manifest stream and test setting for realtime off
-- Fixed: Honour realtime stream property
-- Fixed: Fix using prev button to seek back to start of stream
-- Fixed: Ensure no slash at end of timeshift buffer path
-- Fixed: Make sure write segment file is closed when buffer is destroyed
-- Fixed: Use overwrite when opening files for write for compatibility with SMB on Android
-- Fixed: Don't start timeshift and exit if index file cannot be created
-- Update: If any timeshift file cannot be created log free disk space
-- Fixed: Avoid crash for zero byte or partial timeshift segment files
-- Fixed: Only read ffmpeg logging setting on stream start
-- Update: Redact username and password for urls in log statements
-- Fixed: Only create timeshift directory if it does not exist
-
-v1.14.5
-- Fixed: Fix lintian spellings and mimetype log statement
-- Update: Readme
-
-v1.14.4
-- Fixed: Use kodi's own FFmpeg for ubuntu packaging
-
-v1.14.3
-- Update: Use FFmpeg 4.3
-
-v1.14.2
-- Fixed: Debian packaging
-
-v1.14.1
-- Update: Kodi API Bump
-
-v1.14.0
-- Added: Add HLS bandwidth limit and teletext/fps advanced settings
-- Fixed: Add missing ATTRIBUTE_HIDDEN qualifer to InputSteamFFmpegDirect class
-- Fixed: Fix memory leak for DemuxStreams
-- Update: README
-
-v1.13.0
-- Added: Add setting for user to limit the length of the timeshift buffer
-
-v1.12.0
-- Added: Support seeking for VOD streams or regular file playback
-- Fixed: Update HLS iformat name and remove hls workaround which is fixed in current FFmpeg
-- Added: Timeshift for live streams (experimental)
-- Added: Add support for Kodi user-agent and cookies when calling FFmpeg directly
-- Added: Support multiple occurrences of year, month and day in catchup format specifiers
-- Added: Add option to turn FFmpeg logging on/off
-
-v1.11.0
-- Update: inputstream API 2.3.1
-- Update: Global API 1.2.0
-
-v1.10.0
-- Added: Continued playback of catchtup streams which don't support delayed live streams
-- Added: Skip unsupported seeks like ones too close to live or those less one minute for streams that only allow a 1 minute granulaity
-- Added: Limit seeking for terminating 1 second streams to within 1 minute of live and for 60 streams 2 minutes
-- Update: Debian control file
-- Update: gas-preprocessor to latest version and remove patch that is no longer required
-- Update: .gitignore
-- Fixed: Fix arch typo ffmpeg darwin_embedded
-- Fixed: Cleanup apple frameworks usage in cmakelists
-- Added: Change logging implementation and deprecate use of NOTICE level
-- Added: Allow streams to be opened using cURL in addition to FFmpeg
-- Update: Fix TS Streams by disallowing streaminfo for realtime streams
-- Update: MKV Attachment and IsTransportStreamReady() updates from kodi
-
-v1.9.2
-- Update: Use generic mimetype from stream and remove old mime_type property
-
-v1.9.1
-- Update: Inpustream API 2.3.0
-
-v1.9.0
-- Added: HTTP Proxy support
-- Update: Remove PauseStream for Inputstream API 2.2.0
-- Fixed: fix changelog.in for debian packaging
-
-v1.8.2
-- Fixed: Ubuntu packaging
-- Added: Updated RTP patch
-
-v1.8.1
-- Fixed: Suppress verbose logging on libxml2 on osx that causes travis builds to fail
-
-v1.8.0
-- Added: Support live URL in addition to catchup URL
-- Added: Support resuming from pause and to catchup stream
-- Update: Remove CanSeekStream and CanPauseStream for Inputstream API v2.1.0
-- Update: .gitignore
-
-v1.7.3
-- Update: Remove pthreads library as now w32pthreads is used instead
-- Update: libxml2 disable unused components for common depends and remove unrequired patch
-- Update: Update libxml2 to 2.9.10 for windows, disable html module and remove unrequired patches
-- Update: Enable asm for gnutls and nettle for darwin_embedded
-
-v1.7.2
-- Update: w32pthreads
-- Fixed: gnutls disable tools for OSX 10.15.4 compatibility
-- Fixed: libxml2 patch for OSX 10.15.4/Xcode 11.4 compatibility
-- Update: SPDX, headers and badges
-- Update: gnutls to 3.6.13
-- Update: gmp on android to 6.2.0
-
-v1.7.1
-- Fixed: tvOS build
-
-v1.7.0
-- Update: remove unrequired gnutls patch
-- Fixed: Replace ;'s workaround for cmake bug for ffmpeg LDFLAGS
-- Added: Patch for ffmpeg using rtp protocol where sources option is not retained
-- Update: Document programme_catchup_id stream property in README
-- Added: Support for timestamp catchup format specifier
-- Added: Support duration units format specifer to convert duration to mins or hours
-- Update: Update darwin deprecated thread call
-- Fixed: validate duration format specifier and cap to time now
-- Added: Add optional stream property for live catchup url
-- Added: Support for offset catchup format specifier
-- Fixed: Disable Neon for arm for iOS/tvOS
-- Fixed: Raspberry Pi build
-
-v1.6.0
-- Added: Support catchup-id stream property
-- Added: Enable pthreads for FFmpeg on Windows to allow circular buffer for UDP streams
-- Added: Fanart and icon
-- Added: Move from appveyor to Azure DevOps to windows CI
-- Added: Source and license to addon.xml
-- Added: p8-platform to addon depends
-- Fixed: Remove kodi protocol options before opening URL
-- Fixed: Wrong mms/rtp/udp url being used
-- Fixed: Android linkage for ffmpeg broken
-- Fixed: Travis status image
-- Update: To gnutls-3.6.12
-
-v1.5.0
-- Update: FFmpeg-n4.2.2, patches refreshed
-
-v1.4.1
-- Update: Cleanup logging
-
-v1.4.0
-- Added: gnutls patch to add libdl to support newer OSes
-- Added: Add support for mms and rtp/udp streams with sources
-- Fixed: Add workaround for CMake and Frameworks on Darwin
-
-v1.3.0
-- Added: Support for Windows and iOS
-- Update: To gmp-6.2.0
-- Update: To nettle-3.5.1
-- Update: To gnutls-3.6.11.1
-
-v1.2.1
-- Fixed: Support for XCode build with GCC via travis
-
-v1.2.0
-- Added: Jenkinsfile and .travel.yml
-- Added: Support for Android and linux
-- Fixed: Some depnds errors for iOS, still more to fix
-- Added: Clang and g++ build supported from Travis, osx travis not working
-
-v1.1.0
-- Added: Support for chapters
-
-v1.0.0
-- Added: Initial version working for both normal streams and those supporting catchup
-
-Full changelog here: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/inputstream.ffmpegdirect/changelog.txt
-    </news>
-    <summary lang="ca_ES">Client InputStream per a fluxos FFmpeg (libavformat)</summary>
-    <summary lang="cs_CZ">Klient toků FFmpeg (libavformat) protokolu InputStream</summary>
-    <summary lang="da_DK">InputStream-klient til FFmpeg-streams (libavformat)</summary>
-    <summary lang="de_DE">InputStream-Client für FFmpeg-Streams (libavformat)</summary>
-    <summary lang="en_GB">InputStream Client for FFmpeg streams (libavformat)</summary>
-    <summary lang="es_ES">Cliente de InputStream para flujos FFmpeg (libavformat)</summary>
-    <summary lang="es_MX">Cliente InputStream para flujos FFmpeg (libavformat)</summary>
-    <summary lang="fi_FI">InputStream-asiakas FFmpeg-mediavirroille (libavformat)</summary>
-    <summary lang="fr_FR">Client InputStream pour les flux FFmpeg (format libav)</summary>
-    <summary lang="hr_HR">InputStream klijent za FFmpeg strujanja (libavformat)</summary>
-    <summary lang="it_IT">Client InputStream per stream FFmpeg (libavformat)</summary>
-    <summary lang="ko_KR">FFmpeg 스트림용 InputStream 클라이언트(libavformat)</summary>
-    <summary lang="pl_PL">Klient InputStream dla strumieni FFmpeg (libavformat)</summary>
-    <summary lang="ru_RU">InputStream клиент для FFmpeg потоков (libavformat)</summary>
-    <summary lang="zh_CN">FFmpeg 流的 InputStream 客户端（libavformat）</summary>
-    <description lang="ca_ES">Client InputStream per a fluxos que es poden obrir mitjançant el libavformat de FFmpeg o el cURL de Kodi. S’admeten formats de flux comuns, com ara TS simple, HLS i DASH (sense DRM), així com molts altres.[CR][CR]El complement també és compatible amb els serveis Archive/Catchup , on hi ha una finestra de reproducció (normalment en dies) i pot canviar de temps en aquest interval.[CR][CR]Per a la documentació, visiteu: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="cs_CZ">Klient protokolu InputStream pro toky, které mohou být otevřeny pomocí FFmpeg libavformat nebo Kodi cURL.Běžné formáty toků jako prosté TS, HLS, DASH (bez DRM) a mnoho dalších jsou podporovány.[CR][CR]Doplněk má též podporu pro služby Archive/Catchup, které mají dobu pro opětovné přehrání (obvykle ve dnech) a mohou mít v tomto období časový posun.[CR][CR]Pro dokumentaci navštivte: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="da_DK">InputStream-klient til streams, der kan åbnes af enten FFmpeg&apos;s libavformat eller Kodi&apos;s cURL. Almindelige streamformater som f.eks. almindelig TS, HLS og DASH (uden DRM) understøttes såvel som mange andre.[CR][CR]Add-on&apos;et har også understøttelse af arkiv-/indhentningstjenester, hvor der er et afspilningsvindue (normalt i dage) og kan tidsforskyde på tværs af dette spænd.[CR][CR]For dokumentation besøg: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="de_DE">InputStream-Client für Streams, die entweder mit dem libav-Format von FFmpeg oder mit cURL von Kodi geöffnet werden können. Gängige Stream-Formate wie TS, HLS und DASH (ohne DRM) werden ebenso unterstützt wie viele andere.[CR][CR]Das Addon unterstützt auch Archiv-/Aufholdienste, bei denen Wiedergabefenster vorhanden sind (normalerweise in Tagen), und kann über diesen Zeitraum hinweg eine Zeitverschiebung bewirken.[CR][CR]Dokumentation unter: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="en_GB">InputStream Client for streams that can be opened by either FFmpeg&apos;s libavformat or Kodi&apos;s cURL. Common stream formats such as plain TS, HLS and DASH (without DRM) are supported as well as many others.[CR][CR]The addon also has support for Archive/Catchup services where there is a replay windows (usually in days) and can timeshift across that span.[CR][CR]For documenation visit: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="es_ES">Un cliente de InputStream que puede abrir flujos con libavformat de FFmpeg o cURL de Kodi. Los formatos flujos comunes como son TS puro, HLS y DASH (sin DRM) se soportan bien, así como muchos otros.[CR][CR]El addon también tiene soporte para los servicios de Archivado/Rebobinado si hay ventanas de reproducción (normalmente días) en las que se pueda volver a ver.[CR][CR]La documentación está en: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="es_MX">Cliente InputStream para flujos de datos que pueden abrirse con libavformat de FFmpeg o cURL integrado en Kodi. Formatos de flujo comunes tales como TS simple, HLS y DASH (sin DRM) también están soportados, al igual que muchos otros.[CR][CR]El complemento también soporta servicios Archive/Catchup donde hay un espacio de repetición (usualmente en días) y se puede mover a través del tiempo de dicho espacio.[CR][CR]Para documentación visita: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="fi_FI">InputStream-asiakas mediavirroille, jotka voidaan avata joko FFmpegin libavformat- tai Kodi cURL-kirjastolla. Monien muiden ohella tuetaan yleisiä mediavirtamuotoja, kuten puhdas TS, HLS ja DASH (ilman DRM-suojausta).[CR][CR]Lisäosa tukee myös Archive-/Catchup-palveluita, joissa toisto ja ajansiirto on mahdollista tiettyjen ajanjaksojen sisällä (yleensä päiviä).[CR][CR]Ohjeita löytyy täältä: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="fr_FR">InputStream Client pour les flux pouvant être ouverts soit par le libavformat de FFmpeg, soit par le cURL de Kodi. Les formats de flux courants tels que TS, HLS et DASH (sans DRM) sont pris en charge ainsi que bien d&apos;autres. et peut être décalé dans le temps dans la période.[CR][CR]Pour la documentation, visitez : https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="hr_HR">InputStream klijent za strujanja koja se mogu otvoriti ili FFmpeg libavformatom ili Kodijevim cURL-om. Uobičajeni formati strujanja poput običnog TS, HLS i DASH (bez DRM zaštite sadržaja) formata su podržani kao i mnogi drugi.[CR][CR]Dodatak ima još podršku za Arhive/Hvatanje usluga gdje postoji prozor ponovne raprodukcije (uobičajeno u danima) i može se vremenski premotavati u zadanom vremenskom razdoblju.[CR][CR]Za dokumentaciju posjetite: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="it_IT">Client InputStream per stream che possono essere aperti da libavformat di FFmpeg o cURL di Kodi. Sono supportati formati di stream comuni come TS, HLS e DASH (senza DRM) e molti altri.[CR][CR]L&apos;Add-on ha anche il supporto per i servizi Archivio/Recupero in cui è presente una finestra di riproduzione (di solito in giorni) e può passare attraverso tale intervallo.[CR][CR]Per la documentazione visita: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="ko_KR">FFmpeg의 libavformat 또는 Kodi의 cURL로 열 수 있는 스트림용 InputStream 클라이언트. 일반 TS, HLS 및 DASH(DRM 제외)와 같은 일반적인 스트림 형식은 물론 다른 많은 형식도 지원됩니다.[CR][CR]이 애드온은 재생 창(보통 며칠)이 있는 아카이브/따라잡기 서비스도 지원합니다. 해당 범위에서 타임시프트할 수 있습니다.[CR][CR]문서를 보려면 https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md를 방문하세요</description>
-    <description lang="pl_PL">Klient InputStream dla strumieni, które można otworzyć za pomocą libavformat FFmpeg lub cURL Kodi. Obsługiwane są popularne formaty strumieniowe, takie jak zwykły TS, HLS i DASH (bez DRM), a także wiele innych.[CR][CR]Dodatek obsługuje również usługę archiwizacji, która zapewnia okno powtórek (zazwyczaj w dniach) i może wykonywać przesunięcie czasowe przez ten zakres.[CR][CR]W celu uzyskania dokumentacji odwiedź: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="ru_RU">Клиент InputStream для потоков, которые можно открыть с помощью libavformat от FFmpeg или с помощью Kodi cURL. Поддерживаются основные форматы потоков такие, как простой TS, HLS, DASH (без DRM) и многие другие.[CR][CR]Дополнение также имеет поддержку служб Архива/Перемотки, где есть окна воспроизведения (обычно в днях), которые могут сдвигаться по времени в течение этого промежутка.[CR][CR]Для документации посетите: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
-    <description lang="zh_CN">InputStream 客户端，用于可通过 FFmpeg 的 libavformat 或 Kodi 的 cURL 打开的流。支持普通 TS、HLS 和 DASH（无DRM）等常见流格式以及其他许多格式。[CR][CR]该插件还支持有重播窗口（通常以天为单位）的归档/捕获服务，并可以在该时间跨度内进行时光平移。[CR][CR]相关文档请访问：https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matrix/README.md</description>
   </extension>
 </addon>
 
 <addon
+  id="pvr.waipu"
+  version="21.8.0"
+  name="waipu.tv PVR Client"
+  provider-name="flubshi">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+    <import addon="script.module.inputstreamhelper" version="0.5.5"/>
+    <import addon="inputstream.adaptive" minversion="21.0.0"/>
+    <import addon="inputstream.ffmpegdirect" minversion="21.0.0" optional="true"/>
+  </requires>
+  <extension
+    point="kodi.pvrclient"
+    library_linux="pvr.waipu.so.21.8.0"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+    <license>GNU General Public License. Version 2, June 1991</license>
+    <forum></forum>
+    <website>https://www.waipu.tv/</website>
+    <email></email>
+    <source>https://github.com/flubshi/pvr.waipu</source>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+    </assets>
+    <news>
+- Add support for play position (author: quthla)
+    </news>
+    <summary lang="da_DK">waipu.tv PVR-klient</summary>
+    <summary lang="de_DE">waipu.tv PVR Client</summary>
+    <summary lang="en_GB">waipu.tv PVR Client</summary>
+    <summary lang="es_ES">Cliente PVR waipu.tv</summary>
+    <summary lang="es_MX">Cliente PVR de waipu.tv</summary>
+    <summary lang="fi_FI">waipu.tv PVR-pääte</summary>
+    <summary lang="fr_FR">Client PVR waipu.tv</summary>
+    <summary lang="hr_HR">waipu.tv PVR klijent</summary>
+    <summary lang="it_IT">Client PVR di waipu.tv</summary>
+    <summary lang="ko_KR">waipu.tv PVR 클라이언트</summary>
+    <summary lang="ru_RU">Клиент записи эфира waipu.tv</summary>
+    <description lang="da_DK">waipu.tv PVR-klient. Bemærk: Dette er ikke et officielt waipu-plugin og er ikke relateret til Exaring AG eller waipu.tv. Det er udviklet af frivillige.</description>
+    <description lang="de_DE">waipu.tv PVR Client. Hinweis: Dies ist kein offizielles Waipu-Plugin und steht nicht in Verbindung zur Exaring AG oder zu waipu.tv. Es wurde von Freiwilligen entwickelt.</description>
+    <description lang="en_GB">waipu.tv PVR Client. Note: This is not an official waipu plugin and not related to Exaring AG or waipu.tv. It was developed by volunteers.</description>
+    <description lang="es_ES">Cliente PVR de waipu.tv. Nota: Este no es un add-on oficial de waipu y no está relacionado con Exaring AG o waipu.tv. Fue desarrollado por voluntarios.</description>
+    <description lang="es_MX">Cliente PVR de waipu.tv. Nota: Este no es un complemento oficial de waipu y no está relacionado a Exaring AG o waipu.tv. Ha sido desarrollado por voluntarios.</description>
+    <description lang="fi_FI">waipu.tv PVR-pääte. Huomioi: Tämä ei ole virallinen waipu-lisäosa, eivätkä Exaring AG tai waipu.tv ole osallistuneet sen kehitykseen. Lisäosa on vapaaehtoisten kehittämä.</description>
+    <description lang="fr_FR">Client PVR waipu.tv. Remarque : Il ne s&apos;agit pas d&apos;un plugin waipu officiel et n&apos;est pas lié à Exaring AG ou waipu.tv. Il a été développé par des bénévoles.</description>
+    <description lang="hr_HR">waipu.tv PVR klijent. Napomena: Ovo nije služebeni waipu dodatak i nije povezan s Exaring AG ili waipu.tv. Razvijen je od strane dobrovoljaca.</description>
+    <description lang="it_IT">Client PVR di waipu.tv. Nota: questo non è un add-on ufficiale waipu e non è correlato a Exaring AG o waipu.tv. È stato sviluppato da volontari.</description>
+    <description lang="ko_KR">waipu.tv PVR 클라이언트. 참고: 이것은 공식 waipu 플러그인이 아니며 Exaring AG 또는 waipu.tv와 관련이 없습니다. 자원 봉사자에 의해 개발되었습니다.</description>
+    <description lang="ru_RU">Клиент записи эфира waipu.tv. Примечание: Не является официальным дополнением Waipu и не связан с Exaring AG или waipu.tv. Разработка добровольцев.</description>
+  </extension>
+</addon>
+
+<addon id="skin.amber" version="4.0.0" name="Amber" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
+	<requires>
+		<import addon="xbmc.gui" version="5.17.0" />
+		<import addon="script.favourites" version="7.1.1" />
+		<import addon="resource.uisounds.amber" version="1.0.0" />
+		<import addon="script.skinshortcuts" version="1.0.17" />
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
+		<forum>https://forum.kodi.tv/forumdisplay.php?fid=203</forum>
+		<source>https://github.com/bartolomesoriano/skin.amber</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot01.jpg</screenshot>
+			<screenshot>resources/screenshot02.jpg</screenshot>
+			<screenshot>resources/screenshot03.jpg</screenshot>
+			<screenshot>resources/screenshot04.jpg</screenshot>
+			<screenshot>resources/screenshot05.jpg</screenshot>
+			<screenshot>resources/screenshot06.jpg</screenshot>
+			<screenshot>resources/screenshot07.jpg</screenshot>
+			<screenshot>resources/screenshot08.jpg</screenshot>
+			<screenshot>resources/screenshot09.jpg</screenshot>
+			<screenshot>resources/screenshot10.jpg</screenshot>
+		</assets>
+		<news>4.0.0[CR]- Omega support[CR]- Use custom color picker and drop support for script.skin.helper.colorpicker[CR]- Add MyFavourites.xml[CR]- Update SettingsScreenCalibration.xml[CR]- Add colorbutton + DialogColorPicker.xml[CR]- CinemaVision --> PreshowExperience[CR]- Add Player.Cuts, Player.SceneMarkers, &amp; Player.Editlist[CR]- Add show password button to DialogKeyboard.xml[CR]- Add Video Versions support[CR]- Misc fixes &amp; cleanup
+		</news>
+		<summary lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar</summary>
+		<summary lang="da_DK">Ingen bloatware, kun dine medier med en brugerflade der er let at navigere</summary>
+		<summary lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer leicht zu navigierenden Oberfläche</summary>
+		<summary lang="en_AU">No bloatware, just your media with an easy to navigate interface</summary>
+		<summary lang="en_GB">No bloatware, just your media with an easy to navigate interface</summary>
+		<summary lang="en_NZ">No bloatware, just your media with an easy to navigate interface</summary>
+		<summary lang="en_US">No bloatware, just your media with an easy to navigate interface</summary>
+		<summary lang="es_ES">Sin bloatware, solo tu contenido con una interfaz fácil de navegar</summary>
+		<summary lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar</summary>
+		<summary lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega</summary>
+		<summary lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia</summary>
+		<summary lang="fr_CA">Pas d’inflagiciel, juste vos médias avec une interface facile à parcourir</summary>
+		<summary lang="fr_FR">Pas d&apos;usine à gaz, juste les médias avec une interface épurée</summary>
+		<summary lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti</summary>
+		<summary lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare</summary>
+		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
+		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
+		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
+		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
+		<description lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d&apos;skins Mediastream i Aeon.</description>
+		<description lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Mediastream und Aeon skins.</description>
+		<description lang="en_AU">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
+		<description lang="en_GB">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
+		<description lang="en_NZ">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
+		<description lang="en_US">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
+		<description lang="es_ES">Sin bloatware, solo tus medios con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
+		<description lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de las máscaras Mediastream y Aeon.</description>
+		<description lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega.[CR]Kasutab mõnda Mediastream ja Aeon rüü tekstuuri.</description>
+		<description lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia. [CR]Käyttää jonkin verran kuvamateriaalia Mediastream- ja Aeon-ulkoasuista.</description>
+		<description lang="fr_CA">Pas d’inflagiciel, juste vos médias avec une interface facile à parcourir.[CR]Utilise des textures des habillages Mediastream et Aeon.</description>
+		<description lang="fr_FR">Pas d&apos;utilisation excessive des ressources, juste vos médias avec une interface facile à utiliser.[CR]Utilise quelques textures provenant des habillages Mediastream et Aeon.</description>
+		<description lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti.[CR]Notar ýmsar áferðir úr Mediastream og Aeon skinnunum.</description>
+		<description lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare.[CR]Usa alcune texture delle skin Mediastream e Aeon.</description>
+		<description lang="nl_NL">Geen bloatware, alleen jouw media met een makkelijk te navigeren interface.[CR]Gebruikt sommige texturen van de Mediastream- en Aeonontwerpen.</description>
+		<description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
+		<description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
+		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
+		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
+	</extension>
+</addon>
+
+<addon id="repository.kodinerds" name="Kodinerds Addon Repo" version="7.0.1.7" provider-name="Kodinerds">
+    <requires>
+        <import addon="xbmc.addon" version="12.0.0"/>
+    </requires>
+    <extension point="xbmc.addon.repository" name="Kodinerds Addon Repo">
+        <dir>
+            <info compressed="true">https://repo.kodinerds.net/addons/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="21.9.9" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/piers/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/piers/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/piers/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="21.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/omega/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/omega/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/omega/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="20.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/nexus/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/nexus/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/nexus/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="19.0.0" maxversion="22.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/matrix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/matrix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/matrix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="18.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/leia/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/leia/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/leia/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="17.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/krypton/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/krypton/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/krypton/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="16.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/jarvis/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/jarvis/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/jarvis/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="15.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/isengard/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/isengard/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/isengard/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="14.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/helix/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/helix/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/helix/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+        <dir minversion="13.0.0" maxversion="18.9.0">
+            <info compressed="true">https://repo.kodinerds.net/addons/gotham/addons.xml</info>
+            <checksum>https://repo.kodinerds.net/addons/gotham/addons.xml.md5</checksum>
+            <datadir zip="true">https://repo.kodinerds.net/addons/gotham/zip/</datadir>
+            <hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Addon repository of the Kodinerds Community</summary>
+        <description lang="en">The 'Nerdsrepo' is the Repository of the german Kodi Community 'Kodinerds' (www.kodinerds.net). Most of the hosted Addons here are active developed and supported by the members of the Community. Nerdsrepo is an unofficial Repository of the Kodi Media Center Software</description>
+        <summary lang="de">Addon Repository der Kodinerds Community</summary>
+        <description lang="de">Das 'Nerdsrepo' ist das Addon Repository der deutschen Kodi-Community 'Kodinerds' (www.kodinerds.net). Die meisten der hier im Nerdsrepo gehosteten Addons werden von den Mitgliedern der Community aktiv entwickelt und unterstützt. Das Nerdsrepo ist ein unoffizielles Repository der Kodi Media Center Software.</description>
+        <disclaimer/>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon
   id="peripheral.joystick"
-  version="19.0.4"
+  version="21.1.18"
   name="Joystick Support"
   provider-name="Team Kodi">
   <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.peripheral" minversion="2.0.0" version="2.0.0"/></requires>
+<import addon="kodi.binary.instance.peripheral" minversion="3.0.0" version="3.0.2"/></requires>
   <extension
     point="kodi.peripheral"
     provides_joysticks="true"
     provides_buttonmaps="true"
-    library_linux="peripheral.joystick.so.19.0.4"/>
+    library_linux="peripheral.joystick.so.21.1.18"/>
   <extension point="xbmc.addon.metadata">
     <license>GPL-2.0-or-later</license>
     <source>https://github.com/xbmc/peripheral.joystick</source>
@@ -570,11 +707,12 @@ Full changelog here: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matri
     <summary lang="da_DK">Kodi Joystick Bibliotek</summary>
     <summary lang="de_DE">Joystick-Bibliothek für Kodi</summary>
     <summary lang="en_GB">Kodi Joystick Library</summary>
-    <summary lang="es_ES">Librería Kodi Joystick</summary>
+    <summary lang="es_ES">Biblioteca de Joysticks Kodi</summary>
     <summary lang="es_MX">Biblioteca de Joysticks de Kodi</summary>
     <summary lang="fi_FI">Kodin peliohjainkirjasto</summary>
     <summary lang="fr_FR">Bibliothèque de joystick Kodi</summary>
     <summary lang="hr_HR">Kodi Joystick biblioteka</summary>
+    <summary lang="id_ID">Pustaka Joystick Kodi</summary>
     <summary lang="it_IT">Libreria Joystick Kodi</summary>
     <summary lang="ko_KR">Kodi 조이스틱 라이브러리</summary>
     <summary lang="lv_LV">Kodi kursorsviru katalogs</summary>
@@ -588,14 +726,15 @@ Full changelog here: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matri
     <summary lang="zh_CN">Kodi 游戏杆库</summary>
     <description lang="ca_ES">Aquesta llibreria proporciona controladors de joystick i mapes de botons. S&apos;admeten diverses API de joystick, incloses DirectX, XInput, SDL i l&apos;API Joystick de Linux.</description>
     <description lang="da_DK">Dette bibliotek indeholder joystick-drivere og knapgrupperinger. Flere joystick-API&apos;er understøttes, herunder DirectX, XInput, SDL og Linux Joystick API.</description>
-    <description lang="de_DE">Diese Bibliothek enthält Joystick-Treiber und Schaltflächenzuordnungen. Es werden mehrere Joystick-APIs unterstützt, darunter DirectX, XInput, SDL und die Linux-Joystick-API.</description>
+    <description lang="de_DE">Diese Bibliothek enthält Joysticktreiber und Schaltflächenzuordnungen. Es werden mehrere Joystick-APIs unterstützt, darunter DirectX, XInput, SDL und die Linux-Joystick-API.</description>
     <description lang="en_GB">This library provides joystick drivers and button maps. Multiple joystick APIs are supported, including DirectX, XInput, SDL and the Linux Joystick API.</description>
-    <description lang="es_ES">Esta librería otorga drivers de joystick y mapeo de botones. Soporta múltiples APIs de joystick, incluyendo DirectX, XInput, SDL y la API de Joystick de Linux.</description>
+    <description lang="es_ES">Esta biblioteca otorga drivers de joystick y mapeo de botones. Soporta múltiples APIs de joystick, incluyendo DirectX, XInput, SDL y la API de Joystick de Linux.</description>
     <description lang="es_MX">Esta biblioteca provee controladores de joysticks y mapas de botones. Múltiples APIs de joystick están soportadas, incluyendo DirectX, XInput, SDL y la Linux Joystick API.</description>
     <description lang="fi_FI">Tämä kirjasto sisältää peliohjaimien ajureita ja painikemäärtiyksiä. Useita ohjainrajapintoja tuetaan, kuten mm. DirectX, XInput, SDL ja Linux Joystick API.</description>
     <description lang="fr_FR">Cette bibliothèque fournit des pilotes de joystick et les maps de boutons. Plusieurs API de joystick sont prises en charge, notamment DirectX, XInput, SDL et l’API Linux Joystick.</description>
     <description lang="hr_HR">Ova biblioteka omogućuje upravljačke programe igračih palica i mapiranje tipki. Više API igračih palica je podržano, uključujući DirectX, XInput, SDL i Linux Joystick API.</description>
-    <description lang="it_IT">Questa libreria fornisce i driver del joystick e le mappe dei pulsanti. Sono supportate più API joystick, tra cui DirectX, XInput, SDL e l&apos;API Joystick Linux.</description>
+    <description lang="id_ID">Pustaka ini menyediakan penggerak joystick dan pemetaan tombol. Beberapa API joystick didukung, termasuk DirectX, XInput, SDL, dan API Joystick Linux.</description>
+    <description lang="it_IT">Questa libreria fornisce i driver del joystick e le mappe dei pulsanti. Sono supportate più API per joystick, tra cui DirectX, XInput, SDL e Linux Joystick API.</description>
     <description lang="ko_KR">이 라이브러리는 조이스틱 드라이버와 버튼 맵을 제공합니다. DirectX, XInput, SDL 및 Linux Joystick API를 비롯한 여러 조이스틱 API가 지원됩니다.</description>
     <description lang="lv_LV">Šajā katalogā ir pieejami kursorsviras draiveri un pogu izkārtojuma kartes. Tiek atbalstītas vairākas kursorsviras API, tostarp DirectX, XInput, SDL un Linux kursorsviras API.</description>
     <description lang="nb_NO">Dette biblioteket inneholder joystick-drivere og knappkartlegging. Flere joystick-APIer støttes, blant annet DirectX, XInput, SDL og Linux Joystick API.</description>
@@ -609,310 +748,24 @@ Full changelog here: https://github.com/xbmc/inputstream.ffmpegdirect/blob/Matri
 </addon>
 
 <addon
-  id="inputstream.adaptive"
-  version="19.0.7"
-  name="InputStream Adaptive"
-  provider-name="peak3d">
-  <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
-<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
-<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.inputstream" minversion="3.0.1" version="3.0.1"/>
-<import addon="kodi.binary.instance.videocodec" minversion="2.0.1" version="2.0.2"/></requires>
-  <extension
-    point="kodi.inputstream"
-    name="adaptive"
-    extension=""
-    tags="true"
-    listitemprops="license_type|license_key|license_data|license_flags|manifest_type|server_certificate|stream_headers|manifest_update_parameter|original_audio_language|max_bandwidth|play_timeshift_buffer|pre_init_data"
-    library_linux="inputstream.adaptive.so.19.0.7"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>linux</platform>
-    <news>
-v19.0.7 (2022-06-23)
-- [HLS] fix regression with chunk transferred AES-128 streams
-
-v19.0.6 (2022-06-16)
-[HLS] support PKCS7 padding for AES-128 streams (fixes for AES-128 fmp4 streams)
-
-v19.0.5 (2022-05-18)
-- Fix estimate segment count
-- Update codecs in decrypter interface
-- [HLS] set byteranged init segments explicity (fixes crashing on certain playlists)
-
-v19.0.4 (2022-04-24)
-- Translations updates from Weblate -be_by, fi_fi, cs_cz
-- [DRM] Keep same session from pre-init
-- Fix crash related to mp4 webvtt subtitles
-
-v19.0.3 (2022-02-10)
-- Translations updates from Weblate - hr_hr, nl_nl, sk_s
-- [HLS] Fix for large media sequence numbers
-- [DASH] Allow for multiple representation/bandwidth placeholders
-
-v19.0.2 (2022-01-11)
-- update nl translations
-- [webvtt] only read payl boxes for text
-
-v19.0.1 (2021-12-10)
-- Fix compile error by GCC 11
-
-v19.0.0 (2021-09-14)
-- Change test builds to released 'Kodi 19 Matrix'
-- Increase version to 19.0.0
-  - With start of Kodi 20 Nexus, takes addon as major the same version number as Kodi.
-    This done to know easier to which Kodi the addon works.
-
-v2.6.23 (2021-08-06)
-- Translations from weblate - de_de, ja_jp, ko_kr
- - [Android] use multiple drm sessions (solves stuttering)
- - [DASH] allow for misaligned segs in SegmentTimeline
-
-v2.6.22 (2021-07-18)
-- Automation test release
-
-v2.6.21 (2021-07-18)
-- Automation test release
-
-v2.6.20 (2021-07-17)
-Translations updates from Weblate
-	- de_de, el_gr, es_es, fr_fr, he_il, hi_in, hr_hr, hu_hu, it_it, ja_jp, ko_kr, nl_nl, pl_pl, ro_ro, ru_ru, sk_sk, sv_se
-
-v2.6.19 (2021-07-17)
-- Translations updates from Weblate
-	- af_za, am_et, ar_sa, ast_es, az_az, be_by, bg_bg, bs_ba, ca_es, cs_cz, cy_gb, da_dk, de_de, el_gr, en_au, en_gb, en_nz, en_us, eo, es_ar, es_es, es_mx, et_ee, eu_es, fa_af, fa_ir, fi_fi, fo_fo, fr_ca, fr_fr, gl_es, he_il, hi_in, hr_hr, hu_hu, hy_am, id_id, is_is, it_it, ja_jp, kn_in, ko_kr, lt_lt, lv_lv, ml_in, mn_mn, mt_mt, my_mm, nb_no, nl_nl, os_os, pl_pl, pt_br, pt_pt, ro_md, ro_ro, ru_ru, scn, si_lk, sk_sk, sq_al, sr_rs, sr_rs@latin, sv_se, szl, ta_in, tg_tj, th_th, tr_tr, uk_ua, uz_uz, vi_vn, zh_cn, zh_tw
-
-v2.6.18 (2021-07-13)
-- Add support to pre-initialise DRM
-- Fix intermittent crash when stopping Widevine videos
-
-v2.6.17 (2021-06-20)
-- Fix decrypt errors on non-Android platforms
-- [DASH] fix representation base urls
-- Don't use filecache for subtitle downloads
-
-v2.6.16 (2021-05-21)
-- Allow download retries for VOD
-- [DASH] fix for minimumUpdatePeriod=0
-- [DASH] remove media_renewal_url and media_renewal_time
-- License renewal for widevine
-- [HLS] Fix SSD being deleted with multiple encrypted streams
-- Overhaul manifest redirect logic
-- fix seeking into separate chapters/resume time
-- fix HEVC extra data crash
-- improve settings
-
-v2.6.15 (2021-05-18)
-- [HLS] support webvtt subtitle extensions
-- [DASH] fix segmentTemplate calculation
-- [HEVC] use constant frame rate if average is 0
-- [HLS] don't reset pts on new periods
-- Don't remove secure decoder cap if not requested in manifest_type
-- [Android] fallback to widevine L3 if L1 provisioning fails
-
-v2.6.14 (2021-04-22)
-- Don't overwrite manifest headers with stream headers
-- Stream headers default to manifest headers
-- ac3 is recognised separately to eac3
-- [DASH] time and number placeholders can be used simultaneously
-- [DASH] manifest_update_parameter property defaults to 'full' for SegmentTimeline
-- [DASH] pssh attribute in ContentProtection tag allowed without cenc namespace
-- [DASH] support ttml subs where codec isn't specified
-
-v2.6.13 (2021-04-10)
-- Fix Debian packaging
-
-v2.6.12 (2021-04-09)
-- Remove Android specific decrypter search paths
-- Move Android addon to binary addons repo
-
-v2.6.11 (2021-04-08)
-- Fix ampersand in changelog causing issues from v2.6.9 and v2.6.10
-
-v2.6.10 (2021-04-08)
-- Fix release build
-
-v2.6.9 (2021-04-08)
-- Fix MPD Timing (remove publishTime and presentationTimeOffset)
-- [Dash] Correctly set timeshift_buffer (live)
-- [Dash] Support fpsScale in AdaptationSets
-- [Dash] Fix missing audio languages
-- [DASH] Support ec-3 channel count (urn:mpeg:mpegB:cicp:ChannelConfiguration)
-
-v2.6.8 (2021-03-26)
-- [Dash] Append / to baseurl if required
-- Fix Base Domain (fixes uri=/path/)
-
-v2.6.7 (2021-02-10)
-- Fix build for ios/tvos
-- Use the full BaseUrl if it's a real url inside an AdaptationSet
-
-v2.6.6 (2020-11-21)
-- Matrix VideoCodec API change to v2.0.2 - Fix crypto session id handling
-
-v2.6.5 (2020-11-09)
-- Matrix API change to v3.0.1 - Fix wrong flags bit shift
-
-v2.6.4 (2020-10-31)
-- Fix protocol search in manifest URL
-
-v2.6.3 (2020-10-31)
-- New C-api changes
-- Fix URL's without domain (files)
-- [MPD] Fix SegmentTimeline without given startTime
-
-v2.6.2 (2020-10-30)
-- revert / rework effective url issues
-- api related changes (buildsystem)
-
-v2.6.1 (2020-10-25)
-- Fix effective url if paths beginning with / provided
-- Several translations added / fixed
-- Fix webvtt subtitles for time formats without leading hour 00:
-- Fix segfault when playing PlayReady content (Android)
-- Adapt to kodi c api changes
-
-v2.6.0 (2020-05-16)
-- Update inputstream API 2.3.1
-- Update Global API 1.2.0
-
-v2.5.6 (2020-04-25)
-- Matrix API change to v2.3.0 - Pass mime type to inputstreams if available
-- Matrix API change to v2.2.0 - Allows upto 256 streams, useful for netflix etc.
-
-v2.5.5 (2020-04-06)
-- Matrix API change - Remove CanPauseSteram() and CanSeekStream()
-- Update .gitignore
-
-v2.5.4 (2020-01-19)
-- [HLS] url based initialization segment
-- [DASH] Use effective URL for manifest update
-- Implement Media Renewal Time
-- Fixed WebVTT rlm and lrm
-- Fixed and improved subtitle properties)
-- Add multiple languages
-- [DASH] Fix zero devision segfault
-
-v2.5.3 (2019-11-21)
-- Fix retrieving SIDX from indexRange streams (youtube)
-- Rework seek (use lead stream)
-
-v2.5.2 (2019-11-18)
-- More languages added
-- DolbyVision codec (dvhe) support, kodi changes required to get it work
-- Add property to start LiveStreams from beginning (play_timeshift_buffer)
-- Pass media_headers when downloading pssh-search segment
-- Minor DASH full update / timing / url generation fixes
-
-v2.5.1 (2019-10-07)
-- Language spain added
-- multi period support
-- mp4 webtt binary representation added
-- minor fixes
-
-v2.5.0 (2019-09-02)
-- New major versions for Matrix
-
-v2.4.0 (2019-08-16)
-- Update Kodi VFS API 1.0.3
-- Build script cleanups
-- Implement VP9 static HDR metadata
-- MPD: location attibute added
-- MPD: livestream bugfixes (uninitialized startPTS)
-
-v2.3.22 (2019-06-14)
-- Bento4: sample duration workaround (24/1)
-- WVDecrypter: remove sleep between decrypt calls
-
-v2.3.21 (2019-06-07)
-- [DASH] initialize segment::range_begin_ for URL segments (youtube)
-
-v2.3.20 (2019-06-07)
-- Fix parsing PR ContentProtection KID
-
-v2.3.19 (2019-06-02)
-- [widevine] remove API 8 / Add API 11
-- [TS] Signal configuration change if extra-data has changed
-- [DASH] Use PlayReady WRMHEADER to retrieve DefaultKID
-- [DASH] Allow URL_SEGMENTS + Range-Bytes
-
-v2.3.18 (2019-05-11)
-- align settings with internal resolution check
-- [HLS] support single playlists
-
-v2.3.17 (2019-04-16)
-- Fix KID's with 0 char inside
-
-v2.3.16 (2019-03-25)
-- TTML parser fix
-- [HLS] Add HEVC streams / Fix extra_data_size in ts parser
-- [HLS] effective URL for license
-
-v2.3.15 (2019-02-11)
-- Fix windows build
-
-v2.3.14 (2019-02-10)
-- Add WebM container parser
-    </news>
-    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
-    <summary lang="cs_CZ">Klient adaptivních toků protokolu InputStream</summary>
-    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
-    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
-    <summary lang="en_GB">InputStream client for adaptive streams</summary>
-    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
-    <summary lang="es_MX">Cliente InputStream para transmisiones adaptativas</summary>
-    <summary lang="fi_FI">InputStream-asiakas mukautuville mediavirroille</summary>
-    <summary lang="fr_FR">Client InputStream pour les flux adaptatifs</summary>
-    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
-    <summary lang="hr_HR">InputStream klijent za prilagodljiva strujanja</summary>
-    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
-    <summary lang="it_IT">Client InputStream per stream adattivi</summary>
-    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
-    <summary lang="lv_LV">InputStream klients adaptīvām straumēm</summary>
-    <summary lang="nl_NL">InputStream client voor adaptive streams</summary>
-    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
-    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
-    <summary lang="zh_CN">用于自适应流的 InputStream 客户端</summary>
-    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
-    <description lang="cs_CZ">Klient adaptivních toků protokolu InputStream</description>
-    <description lang="da_DK">InputStream-klient til adaptive streams</description>
-    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
-    <description lang="en_GB">InputStream client for adaptive streams</description>
-    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
-    <description lang="es_MX">Cliente InputStream para transmisiones adaptativas</description>
-    <description lang="fi_FI">InputStream-asiakas mukautuville mediavirroille</description>
-    <description lang="fr_FR">Client InputStream pour les flux adaptatifs</description>
-    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
-    <description lang="hr_HR">InputStream klijent za prilagodljiva strujanja</description>
-    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
-    <description lang="it_IT">Client InputStream per stream adattivi</description>
-    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
-    <description lang="lv_LV">InputStream klients adaptīvām straumēm</description>
-    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
-    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
-    <description lang="zh_CN">用于自适应流的 InputStream 客户端</description>
-  </extension>
-</addon>
-
-<addon
   id="pvr.iptvsimple"
-  version="19.3.0"
-  name="PVR IPTV Simple Client"
+  version="21.8.5"
+  name="IPTV Simple Client"
   provider-name="nightik and Ross Nicholson">
   <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="7.1.0" version="7.1.0"/>
-    <import addon="inputstream.ffmpegdirect" minversion="1.19.0"/>
-    <import addon="inputstream.adaptive" minversion="2.6.6"/>
-    <import addon="inputstream.rtmp" minversion="3.4.0"/>
+<import addon="kodi.binary.instance.pvr" minversion="8.2.0" version="8.3.0"/>
+    <import addon="inputstream.ffmpegdirect" minversion="21.0.0"/>
+    <import addon="inputstream.adaptive" minversion="21.0.0"/>
+    <import addon="inputstream.rtmp" minversion="21.0.0"/>
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.iptvsimple.so.19.3.0"/>
+    library_linux="pvr.iptvsimple.so.21.8.5"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
@@ -921,399 +774,6 @@ v2.3.14 (2019-02-10)
     <assets>
       <icon>icon.png</icon>
     </assets>
-    <news>
-v19.3.0
-- Add setting to make matching channel IDs and tvg-id's case sensitive
-
-v19.2.2
-- Fixed: Some icons using url arguments not displaying
-
-v19.2.1
-- Support url arguments when encoding file portion of icon URL
-
-v19.2.0
-- URL encode last part of tvg logo URL as they can be based on channel names
-
-v19.1.1
-- Fix ch-number tag being ignored
-
-v19.1.0
-- Choose a suitable default stream type for default and append catchup modes
-- Allow catchup tags in M3U header
-- Update flussonic catchup type strings
-- For flussonic catchup add support for generic stream types (where any dir name is used after channel id)
-- Support alternative tag name for channel number
-
-v19.0.3
-- Translations updates from Weblate
-	- da_dk, es_mx, et_ee, hu_hu, lt_lt, nl_nl, pl_pl, zh_cn, zh_tw
-
-v19.0.2
-- Release bump
-
-v19.0.1
-- Set default player as VideoPlayer for ffmpegdirect so Timeshift works for PVR Radio
-
-v19.0.0
-- Changed: Test builds to 'Kodi 19 Matrix'
-- Increased version to 19.0.0
-  - With start of Kodi 20 Nexus, takes addon as major the same version number as Kodi.
-    This done to know easier to which Kodi the addon works.
-
-v7.6.13
-- Fixed: Apply timezone for first aired date if after 1970
-
-v7.6.12
-- Fixed: Always compare to the raw start date and not the localised time to detect NEW programmes
-- Fixed: Do not set year if this programme is a TV show
-
-v7.6.11
-- Fixed: EPG date entry only parsing year
-
-v7.6.10
-- Fixed: Fix episode number when there is no season
-- Fixed: Return server error if channels or groups could not be loaded due to missing file so they are not cleared in Kodi
-- Translations updates from Weblate
-	- id_id, ko_kr, pl_pl
-
-v7.6.9
-- Translations updates from Weblate
-	- pl_pl
-
-v7.6.8
-- Translations updates from Weblate
-	- zh_cn
-
-v7.6.7
-- Translations updates from Weblate
-	- id_id, lt_lt
-
-v7.6.6
-- Language update from Weblate
-
-v7.6.5
-- Fixed: Allow embedded commas in channel name in M3U
-
-v7.6.4
-- Fixed: Only use Local logo location if file is relative
-- Fixed: Add string initialisation from macros as some linux fail to compile without it
-
-v7.6.3
-- Skipped
-
-v7.6.2
-- Fixed: Allow catchup correction (timezone shift) when live URLs have catchup placeholders
-- Fixed: Always load EPG data if we prefer XMLTV logos or catchup is enabled
-
-v7.6.1
-- Fixed: Allow ignoring M3U logos when using local logo path
-
-v7.6.0
-- Added: Support url-tvg in M3U header in addition to x-tvg-url
-- Added: Add support for XZ compression of XMLTV data
-- Fixed: Allow flusonnic channel ids containing forward slashes
-- Fixed: Disable other catchup settings if catched is not enabled
-- Added: Add setting for catchup correction
-- Added: Support xeev XC catchup prefixes
-
-v7.5.1
-- Fixed: Treat 'tvg-rec' catchup tag like the siptv 'timeshift' tag
-- Fixed: Ensure channel's catchup window is used instead of value from settings
-
-v7.5.0
-- Added: Support sub channel numbers
-- Added: Allow setting scope for channels using catchup mode setting to enable overriding
-
-v7.4.3
-- Fixed: Add support for format specifiers use for detecting terminating catchup and granularity
-- Update: Make inputstream add-ons a required dependency
-
-v7.4.2
-- Fixed: Add missing initialisation of display name with underscores after fixing slow epg
-
-v7.4.1
-- Update: Readme - update description for Kodi 19 and add table of contents
-
-v7.4.0
-- Fixed: An xmltv channel cannot have an empty id field
-- Fixed: Fix slow epg load due to display name checks when finding a channel
-- Fixed: Only force load EPG data on startup if catchup is enabled
-- Added: Support custom channel group filters
-- Added: Reload settings before reloading playlist and EPG data
-
-v7.3.0
-- Update: PVR API 7.1.0
-- Added: support past and future max epg days and always load EPG data on start
-
-v7.2.0
-- Added: Safe localtime and format strings for timestamps in catchup
-- Added: Allow now/current time format specifiers in live stream URLs
-- Added: Redact catchup source and url format string
-- Added: Some providers use 'tvg-rec' instead of 'catchup-days'
-
-v7.1.0
-- Added: Set minimum inputstream ffmpegdirect, rtmp and adaptive versions to API stable version for Matrix
-- Added: Redact URLs when logged
-- Update: Replace square brackets with bold text in addon settings help text
-
-v7.0.0
-- Update: PVR API 7.0.2
-
-v6.4.1
-- Update: Remove p8 from debian control file
-
-v6.4.0
-- Added: Add options to support both UDP and all stream types when using timeshift feature
-- Fixed: README spelling corrections
-- Update: Use add-on supplied StringUtils and remove local version
-
-v6.3.2
-- Update: Remove p8-platforms and add local StringUtils for cpp17
-
-v6.3.1
-- Fixed: Append TV/Radio to group name if the same group name is used for both channel types
-
-v6.3.0
-- Update: Allow max catchup of 15 days
-- Added: Support premiere and new tag from XMLTV
-
-v6.2.4
-- Fixed: Only allow timeshift on streams that are live
-
-v6.2.3
-- Fixed: Don't allow timeshift mode on catchup VOD stream
-
-v6.2.2
-- Fixed: Correctly pass realtime stream information to inputstream.ffmpegdirect addon
-
-v6.2.1
-- Fixed: Fix timeshift not working for catchup streams without timestamp
-
-v6.2.0
-- Added: Add advanced option to always enabled timeshift for supported streams using custom M3U properties
-
-v6.1.0
-- Added: Check inputstream is installed or enabled if a custom inputstream is provided in M3U
-
-v6.0.1
-- Update PVR API 7.0.1
-
-v6.0.0
-- Update PVR API 7.0.0
-- Rework addon to support new API interface
-
-v5.2.0
-- Added: Enable timeshift feature from inputstream.ffmpegdirect
-- Added: Support VOD catchup streams including those via plugin URLs
-- Added: Access to ffmpegdirect settings and inputstream checks (C++ API)
-- Fixed: Fix flussonic ts detected as wrong type
-- Fixed: Use kodis built in inputstreams for plugin urls
-- Fixed: Fix incorrect catchup granularity for flussonic stream
-
-v5.1.0
-- Added: Support catchup-type M3U property
-- Added: Set MIME type and manifest on stream types if required
-- Added: Support multiple occurrences of year, month and day in catchup format specifiers
-- Update: Change docs to use inputstream instead of inputstreamclass
-
-v5.0.0
-- Update PVR API 6.5.1
-- Update Global API 1.2.0
-
-v4.14.2
-- Check to make sure catchup streams support timeshifting before letting them do so
-- Fix catchup streams for fs, xc and shift being passed URL with possible protocol options
-
-v4.14.1
-- Fixed: Send manifest type property to ffmpegdirect so it can recognise Smooth Streaming
-
-v4.14.0
-- Added: Stream Manager for runtime caching of stream/mime types for speeding up channel switches
-- Added: Deprecate use of inputstream.ffmpegdirect.mime_type and use mimetype property instead
-- Added: Support advanced setting to set a default inputstream and/or MIME type for channels without them
-- Fixed: Fix full timeshift calc not being applied to catchup streams
-- Added: Suppport catchup-correction value in M3U file for catchup streams geo mismatched to wrong time
-
-v4.13.2
-- Fixed: Install all inputstream dependencies by default.
-- Fixed: Debian control files for run-time dependencies.
-
-v4.13.1
-- Fixed: Install ffmpegdirect dependency by default.
-
-v4.13.0
-- Added: Add support for catchup stream granularity property for ffmpegdirect
-- Fixed: Terminating catchup stream check missing use case
-
-v4.12.0
-- Added: Add support for terminating catchup streams property for ffmpegdirect
-- Update: Convert kodiprop names inputstreamaddon and inputstreamclass to inputstream on load
-
-v4.11.7
-- Fixed: stream media headers not set when inputstream.adaptive is used for HLS streams
-
-v4.11.6
-- Fixed: Fix incorrect live URL selection and inputstream for standard (no timeshift) catchup streams
-- Fixed: Correctly cache mime_type for streams
-
-v4.11.5
-- Fixed: Typo in date regex, caused failure to load EPG on some platforms
-
-v4.11.4
-- Fixed: EPG performance
-- Update: PVR API 6.3.0
-- Added: GPLv2+ badge on README
-- Update: SPDX in copyright header for for GPLv2 or later
-
-v4.11.3
-- Add: GPL2 license file and show GPL2 on README.md
-- Update: Add source url, forum url and license name to addon.xml
-- Update: Copyright year to 2020 and use Kodi / kodi.tv
-- Update: Debian build code
-- Update: Some minor cleanups
-
-v4.11.2
-- Update: PVR API 6.2.0
-
-v4.11.1
-- Fixed: Also check for ffmpegdirect mime type when checking stream type
-- Fixed: Pass mime type to ffmpegdirect if available
-- Fixed: Inspecting stream type for catchup mode shift should default to TS
-
-v4.11.0
-- Added: Support new catchup providers, shift, xc and fs including TS stream support
-- Added: Support for timestamp catchup format specifier
-- Added: Optional catchup-id per programme from XMLTV
-- Added: Add catchup M3U8 examples to README
-- Fixed: Live catchup streams that don't support timeshift
-- Fixed: Don't build test catchup url for non catchup streams
-- Added: Support for offset catchup format specifier
-- Update: Add p8-platform to addon depends instead of from kodi
-
-v4.10.0
-- Added: User-Agent support from advanced addon setting
-
-v4.9.0
-- Added: Catchup support (a.k.a Archive)
-- Added: Missing check for HLS stream type
-- Update: Readme
-- Fixed: strings.po comments
-
-v4.8.5
-- Update: Transifix language files
-
-v4.8.4
-- Fixed: Disable caching when using refresh M3U/XMLTV modes
-- Fixed: Also check channel mime type property when determinig stream type
-- Fixed: Correct settings levels
-
-v4.8.3
-- Fixed: Channel and epg refresh infinite loop
-
-v4.8.2
-- Fixed: Initialise properties size and check max
-- Fixed: Playing a channel will crash if file/URL does not exist
-- Fixed: Support both input stream class and addon properties
-- Fixed: Allow override of ffmpeg reconnect option
-- Fixed: Fix header property spelling
-- Update: Readme
-
-v4.8.1
-- Fixed: Local channels logo with .jpg extension not working
-
-v4.8.0
-- Added: Allow use of inputstream ffmpeg for m3u8 files missing correct extension
-- Added: Support for x-tvg-url in playlist header for XMLTV data
-- Added: Add EXTVLCOPT properties for headers
-- Fixed: Fix RTP multicast stream prefix
-- Added: Add support for Dash and Smooth streaming via inputstream.adaptive
-- Added: Add option to use inputsream.adaptive for m3u8/hls streams
-- Added: Support FFmpeg reconnect for http streams using inputstream ffmpeg
-- Fixed: Limit allowed EXTVLCOPT properties to known set
-- Fixed: Add extra stream properties as lower case only
-- Fixed: Support inputstreamaddon for overriding inputstream
-- Update: Readme
-
-v4.7.1
-- Update: Switch from rapixml to pugixml
-- Fixed: tvg-id does not match a channel if no display-names in xmltv
-- Fixed: Combine multiple XMLTV channels sharing same id
-
-v4.7.0
-- Fixed: Add channel logo extension for relative paths only
-- Fixed: Logger fix ported from pvr.hts
-- Update: update readme
-- Added: Transform UDP/RTP multicast stream URLs to local udpxy URLs
-
-v4.6.1
-- Fixed: Fix channel logos getting default extension
-
-v4.6.0
-- Added: M3U auto refresh
-- Update: update github links for Matrix
-- Update: Remove dependency on p8-platform util, thread and mutex
-- Added: Switch EPGTimeshift setting to hours instead of minutes
-
-v4.5.2
-- Speed up EPG loading
-
-v4.5.1
-- Fix compiler warnings
-
-v4.5.0
-- Fixed: Support full timeshift range of -12 to +14 hours
-- Fixed: Some providers incorrectly use tvg-ID instead of tvg-id
-- Fixed: Support multiple display-names and case insensitive tvg-id is always first, next tvg-name and then channel name find order
-- Added: support episode-num for both xmltv_ns and onscreen systems in epg entry
-- Added: Update readme for supported M3U and XMLTV formats and genres
-- Added: support star rating in epg entry
-- Added: support firstAired and year in epg entry
-- Added: Update OSX build script
-- Added: support multiple actor/director/writers elements in epg entry
-- Added: URLEncode and append .png ext for remote logos built from channel name
-- Added: Support for mapping by genre hex ID and added example files and settings
-- Added: Timing for Playlist and EPG Load
-- Added: Option to number channels by M3U order only
-- Update: Debug logging
-- Added: Channel group member order set to M3U order
-- Fixed: Fix segfault for compressed EPG files
-- Added: Add ordering for groups as per PVR API 6.1.0
-
-v4.4.0
-- Update: Recompile for 6.1.0 PVR Addon API compatibility
-
-v4.3.0
-- Added: Auto reload channels, groups and EPG on settings change
-- Added: Support for #EXTGRP tag in M3U file
-- Fixed: Channel with no groups inherit previous channels groups
-- Added: update new file kodi headers to start with kodi/
-
-v4.2.2
-- Update build system version
-- Change header include way
-- Add AppVeyor for Windows related build tests
-
-v4.2.1
-- Fix nullptr initialisation
-
-v4.2.0
-- Add support for sub-title/actor/director/writer in XML
-
-v4.1.0
-- Support EXTVCOPT in m3u8
-- Build helper script for OSX
-
-v4.0.2
-- Fix wrong EPG times due to DST on Windows
-
-v4.0.1
-- Remove channels loaded notification
-
-v4.0.0
-- Update to PVR addon API v6.0.0
-
-Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.iptvsimple/changelog.txt
-    </news>
     <summary lang="af_ZA">Kodi PVR byvoegsel vir IPTV ondersteuning. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="az_AZ">IPTV dəstəyi üçün Kodi PVR əlavəsini yükləyin.[CR]https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="be_BY">PVR-дапаўненне для Kodi для падтрымкі IPTV.</summary>
@@ -1329,20 +789,20 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
     <summary lang="en_NZ">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="en_US">Kodi PVR addon for IPTV support. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="es_AR">Addon Kodi PVR para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="es_ES">Kodi PVR addon para soporte IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="es_ES">Complemento Kodi PVR para compatibilidad con IPTV.</summary>
     <summary lang="es_MX">Complemento Kodi PVR para soporte de IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="et_EE">Kodi IPTV lisamoodul.</summary>
     <summary lang="fi_FI">Kodin tallenninlisäosa IPTV-tuelle. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="fr_CA">Addiciel de numériscope Kodi pour la prise en charge d’IPTV</summary>
-    <summary lang="fr_FR">Extension enregistreur vidéo (PVR) pour la gestion IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home.</summary>
+    <summary lang="fr_FR">Extension enregistreur vidéo (PVR) pour la gestion IPTV.</summary>
     <summary lang="gl_ES">Complemento PVR do Kodi de soporte á IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="he_IL">לקוח טלוויזיה חיה עם תמיכה ב־IPTV.[CR]https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="he_IL">תוסף Kodi PVR עם תמיכה ב-IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="hr_HR">Kodi PVR dodatak za IPTV podršku.</summary>
     <summary lang="hu_HU">Kodi PVR kiegészítő az IPTV támogatáshoz. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="id_ID">Pengaya PVR Kodi untuk dukungan IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="is_IS">Kodi upptökuviðbót fyrir stuðning við IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="it_IT">Add-on Kodi PVR per il supporto IPTV.</summary>
-    <summary lang="ja_JP">IPTV をサポートする Kodi PVR アドオンです。 https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="ja_JP">IPTVをサポートするKodi PVRアドオンです。https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="ko_KR">IPTV 지원을 위한 Kodi PVR 애드온.</summary>
     <summary lang="lt_LT">Kodi PVR priedas IPTV palaikymui. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="lv_LV">Kodi PVR pielikums IPTV atbalstam. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -1357,7 +817,7 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
     <summary lang="ro_RO">Supliment PVR Kodi pentru suport IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="ru_RU">Kodi PVR аддон для поддержки IPTV.</summary>
     <summary lang="sk_SK">Kodi PVR doplnok umožňujúci IPTV podporu. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
-    <summary lang="sl_SI">Kodijev dodatek PVR s podporo za IPTV. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
+    <summary lang="sl_SI">Kodijev dodatek PVR s podporo za IPTV.</summary>
     <summary lang="sr_RS">Kodi PVR додатни програм за IPTV подршку. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="sr_RS@latin">Kodi PVR dodatni program za IPTV podršku. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
     <summary lang="sv_SE">PVR-tillägg med IPTV-support för Kodi. https://github.com/afedchin/Kodi-addon-iptvsimple/wiki/IPTV-Simple-Home</summary>
@@ -1380,19 +840,19 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
     <description lang="en_NZ">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
     <description lang="en_US">IPTV Simple PVR Client support m3u playlists, streaming of Live TV for multicast/unicast sources, listening to Radio channels and EPG.</description>
     <description lang="es_AR">Cliente simple PVR IPTV.  Reproduce de TV en Vivo multicast/unicast y listas m3u8[CR] . reproduce tambien canales de radio y GEP</description>
-    <description lang="es_ES">El cliente PVR IPTV Simple soporta listas M3U, reproducción de TV en Vivo para origenes multicast/unicast, escucha de canales de radio y EPG</description>
+    <description lang="es_ES">IPTV Simple PVR Client soporta listas de reproducción m3u, transmisión de TV en directo para fuentes multidifusión/unidifusión, escucha de canales de Radio y EPG.[CR] [CR]Para documentación visite: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="es_MX">IPTV Simple PVR Client soporta listas de reproducción m3u, streaming de Live TV para fuentes multicast / unicast, escuchando para canales de radio y EPG.</description>
-    <description lang="fi_FI">IPTV Simple tallenninpääte tukee m3u-toistolistoja, televisiolähetysten multicast-/unicast-suoratoistoa, radiokanavien kuuntelua sekä ohjelmaopasta.[CR]    [CR]Ohjeita löydät täältä: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
+    <description lang="fi_FI">IPTV Simple PVR-pääte tukee m3u-toistolistoja, televisiolähetysten multicast-/unicast-suoratoistoa, radiokanavien kuuntelua sekä ohjelmaopasta.[CR]    [CR]Ohjeita löydät täältä: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="fr_CA">Client de numériscope simple pour IPTV, prenant en charge les listes de lecture m3u, la diffusion en continu des télés en direct pour les sources de multidiffusion et de monodiffusion, l’écoute de chaînes radio, et le GÉP.</description>
-    <description lang="fr_FR">Le client IPTV Simple PVR prend en charge les listes de lecture m3u, le streaming de la télévision en direct pour les sources multidiffusion/unicast, l&apos;écoute des chaînes de radio et de l&apos;EPG.[CR] [CR]Pour la documentation, visitez : https://github.com/kodi-pvr/pvr.iptvsimple /blob/Matrix/README.md[CR]    </description>
+    <description lang="fr_FR">Le client IPTV Simple PVR prend en charge les listes de lecture m3u, le streaming de la télévision en direct pour les sources multidiffusion/monodiffusion, l&apos;écoute des chaînes de radio et de l&apos;EPG.[CR] [CR]Pour la documentation, visitez : https://github.com/kodi-pvr/pvr.iptvsimple /blob/Matrix/README.md[CR]    </description>
     <description lang="gl_ES">O cliente PVR simple de IPTV soporta listaxes m3u, transmisión de TV en directo para fontes multicast/unicast, escoita de canles de Radio e Guía.</description>
-    <description lang="he_IL">לקוח טלוויזיה חיה IPTV Simple תומך ברשימות m3u, הזרמת שידורים חיים ממקור מרובב/ סטרים בודד, האזנה לתחנות רדיו והצגת לוח שידורים.</description>
+    <description lang="he_IL">IPTV Simple PVR Client תומך ברשימות השמעה של m3u, הזרמת טלוויזיה בשידור חי עבור מקורות מרובי שידור/חד שידור, האזנה לערוצי רדיו ולוח שידורים..[CR]    [CR]לתיעוד ניתן לבקר: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="hr_HR">IPTV Simple PVR klijent podržava m3u popise izvođenja, strujanje TV programa s multicast/unicast izvora, slušanje radio programa i elektroničke programske vodiče (EPG).    [CR]Za dokumentaciju posjetite: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="hu_HU">Az IPTV PVR kiegészítő támogatja m3u listák lejátszását, élő TV adások hálózati streamelését, rádióadók hallgatását EPG adatok kezelésével.</description>
     <description lang="id_ID">IPTV, klien PTV sederhana yang mendukung playlist m3u, pengaliran siaran TV langsung untuk sumber multicast/unicast, mendengarkan radio dan EPG.</description>
     <description lang="is_IS">Einfaldur upptökubiðlari fyrir IPTV sem styður m3u spilunarlista, streymingu af beinum útsendingum frá multicast/unicast þjónustum, hlustun á útvarpsrásir og rafræna dagskrárvísa</description>
-    <description lang="it_IT">IPTV Simple PVR Client supporta playlist m3u, supporta lo stream per sorgenti multicast/unicast, ascolto di canali radio ed EPG.[CR]    [CR]Per la documentazione visita: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
-    <description lang="ja_JP">IPTV シンプル PVR クライアントは、m3u プレイリスト、マルチキャスト/ユニキャストのライブ TV ストリーミング、ラジオチャンネルや EPG の視聴をサポートしています。</description>
+    <description lang="it_IT">IPTV Simple PVR Client supporta playlist m3u, stream per sorgenti multicast/unicast, ascolto di canali radio ed EPG.[CR]    [CR]Per la documentazione visita: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
+    <description lang="ja_JP">IPTVシンプルPVRクライアントは、m3uプレイリスト、マルチキャスト/ユニキャストのライブ TV ストリーミング、ラジオチャンネルやEPGの視聴をサポートしています。    </description>
     <description lang="ko_KR">IPTV Simple PVR 클라이언트는 m3u 재생목록, 스트리밍, 멀티캐스트/유니캐스트 소스의 TV 시청, 라디오 채널과 EPG를 통한 청취를 지원합니다.[CR]    [CR]For documentation visit: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="lt_LT">IPTV Simple PVR klientas palaiko m3u grojaraščius, TV transliacijas iš multicast/unicast šaltinių, radijo stočių transliacijas ir EPG.</description>
     <description lang="lv_LV">IPTV vienkāršais PVR klients atbalsta m3u spēļsarakstus, tiešraides TV straumēšanu multiraides/uniraides avotiem, radio kanālu klausīšanos un EPG.</description>
@@ -1402,12 +862,12 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
     <description lang="nb_NO">IPTV Simple PVR-klient støtter m3u-spillelister, strømming av direkte-TV, lytting til radiokanaler og programguider.</description>
     <description lang="nl_NL">IPTV Simple PVR cliënt ondersteunt m3u-afspeellijsten, streaming van live-TV voor multicast/unicastbronnen, luisteren naar radiozenders en EPG.</description>
     <description lang="pl_PL">Klient telewizji dla telewizji internetowej obsługuje listy odtwarzania m3u, transmisję kanałów radiowych i telewizyjnych ze źródeł punktowych i grupowych oraz funkcje przewodnika telewizyjnego.</description>
-    <description lang="pt_BR">O cliente de PVR IPTV Simple Client oferece suporte para listas m3u, transmissão de TV ao vivo de fontes multicast/unicast, transmissão de rádios e, ainda, suporte a guia de programação eletrônico - EPG.</description>
+    <description lang="pt_BR">O IPTV Simple PVR Client oferece suporte para listas m3u, transmissão de TV ao vivo de fontes multicast/unicast, transmissão de rádios e, ainda, suporta o guia eletrônico de programação - EPG.    </description>
     <description lang="pt_PT">Cliente IPTV Simple PVR com suporte a listas de reprodução m3u, transmissão de TV em direto de fontes multidifusão/unidifusão, ouvir estações de rádio e EPG.</description>
     <description lang="ro_RO">PVR Client IPTV suporta liste m3u, redare TV în direct pentru surse de multicast/unicast, ascultare canale radio si EPG.</description>
     <description lang="ru_RU">IPTV Simple PVR поддерживает просмотр потокового ТВ для юникаст/мультикаст источников, прослушивание радиоканалов и работу с телегидом.[CR]    [CR]Для документации посетите: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
     <description lang="sk_SK">Jednoduchý PVR klient IPTV podporuje mp3 zoznamy súborov, streamovanie živého televízneho vysielania ako multicast/unicast zdroje, počúvanie rozhlasových kanálov a EPG.[CR]    [CR]Pre dokumentáciu navštívte: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/README.md[CR]    </description>
-    <description lang="sl_SI">IPTV Simple odjemalec PVR podpira sezname m3u, pretakanja TV v živo za vire multicast/unicast, poslušenje radijskih postaj in EPG.</description>
+    <description lang="sl_SI">IPTV Simple PVR Client podpira sezname predvajanja m3u, pretakanje TV v živo za multicast/unicast vire, poslušanje radijskih kanalov in EPG.[CR] [CR]Za dokumentacijo obiščite: https://github.com/kodi-pvr/pvr.iptvsimple /blob/Matrix/README.md[CR]    </description>
     <description lang="sr_RS">IPTV Једноставан PVR Клијент подржава m3u листе за репродукцију, стримовање ТВ Уживо за multicast/unicast изворе, слушање Радио канала и EPG.</description>
     <description lang="sr_RS@latin">IPTV Jednostavan PVR Klijent podržava m3u liste za reprodukciju, strimovanje TV Uživo za multicast/unicast izvore, slušanje Radio kanala i EPG.</description>
     <description lang="sv_SE">IPTV Simple PVR Client stöder m3u-spellistor, strömmande Live-TV för multicast/unicast-källor, radiolyssning och EPG.</description>
@@ -1429,10 +889,10 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
     <disclaimer lang="en_NZ">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
     <disclaimer lang="en_US">This is unstable software! The authors are in no way responsible for failed playings, incorrect EPG times, wasted hours, or any other undesirable effects.</disclaimer>
     <disclaimer lang="es_AR">Este es un software inestable. El autor no se hace responsable por reproducciones fallidas, datos de GEP incorrectos, horas perdidas o cualquier otro efecto indeseable.</disclaimer>
-    <disclaimer lang="es_ES">Este es un software inestable! El autor no se hace responsable de reproducciones fallidas, datos de EPG incorrectos, horas perdidas o cualquier otro efecto indeseado.</disclaimer>
+    <disclaimer lang="es_ES">¡Este es un software inestable! El autor no se hace responsable de reproducciones fallidas, datos de EPG incorrectos, horas perdidas o cualquier otro efecto no deseado.</disclaimer>
     <disclaimer lang="es_MX">¡Este es un software inestable! Los autores no son responsables en absoluto de reproducciones fallidas, tiempos EPG incorrectos, desperdicio de horas, o cualquier otro efecto indeseable.</disclaimer>
     <disclaimer lang="eu_ES">Software hau ezegonkorra da! Egileak ez dira inolaz ere erantzule editen erreprodukzio akatsez, EPG denbora okerrez, ordu galduez edo beste edozein ondorio ezerosotaz.</disclaimer>
-    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelma! Sen tekijät eivät ole millään muotoa vastuussa epäonnistuneista tallennuksista, virheellisistä ajastuksista, haaskatusta ajasta, verenpaineen noususta tai mistään muusta epäsuotuisasta vaikutuksesta.</disclaimer>
+    <disclaimer lang="fi_FI">Tämä on epävakaa ohjelmisto! Sen kehittäjät eivät ole millään tavoin vastuussa epäonnistuneista toistoista, virheellisistä ohjelmaoppaan aikatauluista, hukatusta ajasta tai mistään muistakaan ei-toivotuista seurauksista.</disclaimer>
     <disclaimer lang="fr_CA">Ce logiciel est instable ! Les auteurs ne sont aucunement responsables des lectures défaillantes, d’horaires erronés du GÉP, des heures perdues ou tout autre effet indésirable.</disclaimer>
     <disclaimer lang="fr_FR">Logiciel en cours d&apos;élaboration ! Les auteurs ne sont en aucun cas responsables de l&apos;échec des enregistrements, programmations défectueuses, temps perdu ou autres effets indésirables.</disclaimer>
     <disclaimer lang="gl_ES">Este software non é estábel! Os autores non se fan responsábeis dos erros na reproducción, horarios incorrectos na Guía, horas vencidas, e otros efectos non desexados.</disclaimer>
@@ -1469,675 +929,56 @@ Full changelog here: https://github.com/kodi-pvr/pvr.iptvsimple/blob/Matrix/pvr.
 </addon>
 
 <addon
-  id="pvr.waipu"
-  version="19.3.1"
-  name="waipu.tv PVR Client"
-  provider-name="flubshi">
+  id="inputstream.adaptive"
+  version="21.5.1"
+  name="InputStream Adaptive"
+  provider-name="peak3d, Team Kodi">
   <requires>
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
 <import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
-<import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="7.1.0" version="7.1.0"/>
-    <import addon="script.module.inputstreamhelper" version="0.5.5"/>
-    <import addon="inputstream.adaptive" minversion="2.6.15"/>
-  </requires>
+<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/>
+<import addon="kodi.binary.instance.videocodec" minversion="2.1.0" version="2.1.0"/></requires>
   <extension
-    point="kodi.pvrclient"
-    library_linux="pvr.waipu.so.19.3.1"/>
+    point="kodi.inputstream"
+    name="adaptive"
+    extension=""
+    tags="true"
+    listitemprops="drm_legacy|license_type|license_key|license_url|license_url_append|license_data|license_flags|manifest_type|server_certificate|manifest_update_parameter|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|internal_cookies|config|manifest_config"
+    library_linux="inputstream.adaptive.so.21.5.1"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
-    <license>GNU General Public License. Version 2, June 1991</license>
-    <forum></forum>
-    <website>https://www.waipu.tv/</website>
-    <email></email>
-    <source>https://github.com/flubshi/pvr.waipu</source>
-    <assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-      <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
-      <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
-    </assets>
-    <news>
-- 19.3.1 Remove Sport1 from HLS allowlist
-- 19.3.0 Update translations; Implement EPG Tag preview images
-    </news>
-    <summary lang="da_DK">waipu.tv PVR-klient</summary>
-    <summary lang="de_DE">waipu.tv PVR Client</summary>
-    <summary lang="en_GB">waipu.tv PVR Client</summary>
-    <summary lang="es_ES">Cliente PVR waipu.tv</summary>
-    <summary lang="es_MX">Cliente PVR de waipu.tv</summary>
-    <summary lang="it_IT">waipu.tv client PVR</summary>
-    <summary lang="ko_KR">waipu.tv PVR 클라이언트</summary>
-    <description lang="da_DK">waipu.tv PVR-klient. Bemærk: Dette er ikke et officielt waipu-plugin og er ikke relateret til Exaring AG eller waipu.tv. Det er udviklet af frivillige.</description>
-    <description lang="de_DE">waipu.tv PVR Client. Hinweis: Dies ist kein offizielles Waipu-Plugin und steht nicht in Verbindung zur Exaring AG oder zu waipu.tv. Es wurde von Freiwilligen entwickelt.</description>
-    <description lang="en_GB">waipu.tv PVR Client. Note: This is not an official waipu plugin and not related to Exaring AG or waipu.tv. It was developed by volunteers.</description>
-    <description lang="es_ES">Cliente PVR waipu.tv. Nota: Este no es un plugin oficial de waipu y no está relacionado con Exaring AG o waipu.tv. Esta desarrollado por voluntarios.</description>
-    <description lang="es_MX">Cliente PVR de waipu.tv. Nota: Este no es un complemento oficial de waipu y no está relacionado a Exaring AG o waipu.tv. Ha sido desarrollado por voluntarios.</description>
-    <description lang="it_IT">waipu.tv client PVR. Nota: questo non è un plug-in waipu ufficiale e non è correlato a Exaring AG o waipu.tv. È stato sviluppato da volontari.</description>
-    <description lang="ko_KR">waipu.tv PVR 클라이언트. 참고: 이것은 공식 waipu 플러그인이 아니며 Exaring AG 또는 waipu.tv와 관련이 없습니다. 자원 봉사자에 의해 개발되었습니다.</description>
-  </extension>
-</addon>
-
-<addon id="pvr.zattoo"
-       version="19.7.16"
-       name="Zattoo PVR Client"
-       provider-name="trummerjo,rbuehlma">
-  <requires>
-    
-<import addon="kodi.binary.global.main" minversion="1.2.0" version="1.3.0"/>
-<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.0" version="1.1.6"/>
-<import addon="kodi.binary.instance.pvr" minversion="7.1.0" version="7.1.0"/>
-    <import addon="inputstream.adaptive" minversion="2.4.2"/>
-    <import addon="script.module.inputstreamhelper" version="0.5.8"/>
-  </requires>
-  <extension point="kodi.pvrclient" library_linux="pvr.zattoo.so.19.7.16"/>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="de_DE">Kodi-PVR-Client für Zattoo</summary>
-    <summary lang="en_AU">Kodi's frontend for Zattoo</summary>
-    <summary lang="en_GB">Kodi's frontend for Zattoo</summary>
-    <summary lang="en_NZ">Kodi's frontend for Zattoo</summary>
-    <summary lang="en_US">Kodi's frontend for Zattoo</summary>
-    <description lang="de_DE">PVR-Client für Zattoo. Unterstützt TV &amp; Aufnahmen, TV-Guide (EPG) und Timer.</description>
-    <description lang="en_AU">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
-    <description lang="en_GB">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
-    <description lang="en_NZ">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
-    <description lang="en_US">Zattoo frontend; supporting streaming of Live TV &amp; Recordings, EPG, Timers</description>
-    <disclaimer lang="de_DE">Die Autoren sind in keiner Weise verantwortlich für fehlgeschlagene Aufnahmen, falsche Timer, verschwendete Zeit oder andere ungewünschte Effekte.</disclaimer>
-    <disclaimer lang="en_AU">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_GB">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_NZ">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <disclaimer lang="en_US">The authors are in no way responsible for failed recordings, incorrect timers, wasted hours, or any other undesirable effects..</disclaimer>
-    <platform>linux</platform>
-    <license>GPL-2.0-or-later</license>
-    <source>https://github.com/rbuehlma/pvr.zattoo</source>
-    <assets>
+	<license>GPL-2.0-or-later</license>
+	<source>https://github.com/xbmc/inputstream.adaptive</source>
+	<assets>
       <icon>icon.png</icon>
       <fanart>fanart.jpg</fanart>
     </assets>
-    <news>
-v19.7.16
- - Add setting to enable/disable skip of start of programme
-v19.7.15
- - Fix crash on settings update
-v19.7.14
- - Fix duplicate requests
- - This also fixes the error when deleting a recording
-v19.7.13
- - Refactor session handling
- - Revert: "Allow enabling/disabling directories for series recordings"
-v19.7.12
- - Allow enabling/disabling directories for series recordings
-v19.7.11
- - Put series recordings into directories
-v19.7.10
- - Return error if addon is not connected
-v19.7.9
- - Fix replay fallback if epg tag has changed
-v19.7.8
- - Fix concurrent access to list
-v19.7.7
- - Fix loading detailed epg information
-v19.7.6
- - Try to get current epg from Zattoo if replay fails
-v19.7.5
- - Do not load EPG for channels not listed
-v19.7.4
- - Load additional EPG information directly from Zattoo
- - Remove enhanced EPG provider
-v19.7.3
- - Remove support for XmlTV files
- - Support series recording
-v19.7.2
- - Fix duplicate requests
- - Trigger update after deleting timer and recording
- - Fix return status of deleting timer and recording
-v19.7.1
- - Fix HLS stream
-v19.7.0
- - Use Zattoo v3 API
- - Move addon data to sqlite db
- - Refactor loading EPG data
- - Fix loading app token
-v19.6.1
- - Fix timeshift for regions without full replay
-v19.6.0
-- Update PVR API 7.1.0
-v19.5.1
- - Rebuild
-v19.5.0
- - Update PVR API 7.0.2
-v19.4.4
- - Improve session re-init
-v19.4.3
-- Remove p8 from debian control file
-v19.4.2
- - Remove p8-platform dependency
- - Use std::thread
- - Fix char buffer delete
- - Use std:mutex
- - Remove unused p8-platform headers
-v19.4.1
- - Fix replay
-v19.4.0
- - Update PVR API 7.0.0
- - Major changes to match new API
-v19.3.2
- - Support receiving app token from html and json
-v19.3.1
- - Fix receiving app token required for login
-v19.3.0
- - Update PVR API 6.5.1
- - Update Global API 1.2.0
-v19.2.20
- - Update PVR API 6.5.0
-v19.2.19
- - Use Kodi filesystem to load xmltv file
-v19.2.18
- - Update PVR API 6.4.0
- - Correct license name on addon.xml
- - Minor cleanups
- - Add french categories
-v19.2.17
- - Warn missing categories only once
-v19.2.16
- - Fix Zattoo login
-v19.2.15
- - Rebuild of 19.2.14
-v19.2.14
- - Update PVR API 6.3.0
-v19.2.13
- - Update Debian build code
- - Minor cleanups
- - Add license name and source url to addon.xml
- - Add GPL2 license file and show GPL2 on README.md
-v19.2.12
- - Update PVR API 6.2.0
-v19.2.11
- - Do not show cache parse error if file has been removed
-v19.2.10
- - Fix login with credentials containing exclamation mark (!) in password
-v19.2.9
- - Add support for parental pin
- - Use selective recall flag by programme
-v19.2.8
- - Improve caching of epg data
-v19.2.7
- - Fix translations
- - Reduce number of update threads
- - Init update threads after login
-v19.2.6
- - Fix changelog in xml
-v19.2.5
- - Add inputstream.adaptive as dependency
- - Move changelog to addon metadata
-v19.2.4
- - Add option to disable Dolby
- - Improve update of recordings and timer
-v19.2.3
- - Support Dolby
-v19.2.2
- - Serialize sending EPG to Kodi.
-v19.2.1
- - Update cmake build system to Version 3.5
-v19.2.0
- - Recompile for 6.1.0 PVR Addon API compatibility
-v19.1.0
- - Update to GUI addon API v5.14.0
-v19.0.4
- - Fallback to country code if service region country is missing
-v19.0.3
- - Fix loading xmltv data
-v19.0.2
- - Improve loading xmltv file
-v19.0.1
- - Load description from xmltv file
-v19.0.0
- - Update to PVR addon API v6.0.0
-v18.1.22
- - Fix timeshift for regions without full replay
-v18.1.21
- - Improve session re-init
-v18.1.20
- - Same as v18.1.19
-v18.1.19
- - Support receiving app token from html and json
-v18.1.18
- - Fix receiving app token required for login
-v18.1.17
- - Use Kodi filesystem to load xmltv file
-v18.1.16
- - Warn missing categories only once
-v18.1.15
- - Fix Zattoo login
-v18.1.14
- - Do not show cache parse error if file has been removed
-v18.1.13
- - Fix login with credentials containing exclamation mark (!) in password
-v18.1.12
- - Add support for parental pin
- - Use selective recall flag by programme
-v18.1.11
- - Improve caching of epg data
-v18.1.10
- - Fix translations
- - Reduce number of update threads
- - Init update threads after login
-v18.1.9
- - Fix changelog in xml
-v18.1.8
- - Add inputstream.adaptive as dependency
- - Move changelog to addon metadata
-v18.1.7
- - Add option to disable Dolby
- - Improve update of recordings and timer
-v18.1.6
- - Support Dolby
-v18.1.5
- - Serialize sending EPG to Kodi.
-v18.1.4
- - Fallback to country code if service region country is missing
-v18.1.3
- - Fix loading xmltv data
-v18.1.2
- - Improve loading xmltv file
-v18.1.1
- - Load description from xmltv file
-v18.1.0
- - Support DASH widevine streams
-v18.0.68
- - Fix setting image url for epg
-v18.0.67
- - Fix image url for epg and recordings
-v18.0.66
- - Fix reseller configuration
-v18.0.65
- - Use TLS for external epg service
- - Inform that the zattoo session is provided to the epg service
-v18.0.64
- - Set genre before transferring timer
-v18.0.63
- - Add 1&amp;1 TV as reseller
-v18.0.62
- - Add swb TV as reseller
-v18.0.61
- - Add tinyxml2 as dependency (thanks to Rechi)
- - Cleanup c++ code (thanks to ksooo)
-v18.0.60
- - Support external xmltv files
-v18.0.59
- - Add tv.salt.ch as reseller
-v18.0.58
- - Fix uuid handling
-v18.0.57
- - Cleanup &amp; improvements (thanks to Currywurst)
-v18.0.56
- - Fix segmentation fault
- - Reduce log on level notice
-v18.0.55
- - Fix wrong null ptr check in GetRecordingLastPlayedPosition
-v18.0.54
- - Fix build with rapid json used by kodi
-v18.0.53
- - Fix loading details of more than 200 recordings
-v18.0.52
- - Fix loading detail recording data
-v18.0.51
- - Enable replay also for hls streams
-v18.0.50
- - Store app token in case it cannot be fetched from Zattoo
-v18.0.49
- - Fix error if no recordings are available
-v18.0.48
- - Update to PVR addon API v5.10.1
-v18.0.47
- - Fix deadlock due to missing mutex.unlock()
-v18.0.46
- - Fix loading recordings data
-v18.0.45
- - Use v4 login api
- - Improve logging
-v18.0.44
- - Update to PVR addon API v5.10.0
-v18.0.43
- - Improve handling of recordings
-v18.0.42
- - Do not drop recording state if recordings are not yet loaded
-v18.0.41
- - Store uuid after generating
-v18.0.40
- - Improve storing session cookie
-v18.0.39
- - Shorten session cookies in log
-v18.0.38
- - Persist Zattoo session
-v18.0.37
- - Cleanup cache also when recordings are not avialable
- - Provide addon version to Zattoo upon login
-v18.0.36
- - Seek 5 minutes into recording stream
-v18.0.35
- - Seek 5 minutes into replay stream
-v18.0.34
- - Use service region country for epg
-v18.0.33
- - Fix valgrind output
-v18.0.32
- - Cleanup due to merge in Kodi
-v18.0.31
- - Add quantum TV as reseller
-v18.0.30
- - Set mime type to prevent HEAD request
- - Enable manifest refresh
-v18.0.29
- - Support selective recall and restart
-v18.0.28
- - Revert "Allow playing current program from start without recall"
-v18.0.27
- - Disable playing future program
-v18.0.26
- - Allow playing current program from start without recall
-v18.0.25
- - Add some session information to log output
-v18.0.24
- - Sync time handling with pvr.teleboy
-v18.0.23
- - Add missing epg categories
-v18.0.22
- - Search for eit_categories.txt in system addon path
-v18.0.21
- - Search for logos in system addon path
-v18.0.20
- - Fix race conditions while closing the addon
-v18.0.19
- - Fix case where session is still alive while addon starts
- - Improve cache cleanup
- - Change some log levels
-v18.0.18
- - Fix time zone for EPG
-v18.0.17
- - Add some reseller
- -- netplus.tv
- -- mobiltv.quickline.com
- -- tvplus.m-net.de
- -- player.waly.tv
- -- meinewelt.cc
- -- bbv-tv.net
- -- vtxtv.ch
- -- myvisiontv.ch
- -- iptv.glattvision.ch
- -- saktv.ch
- -- nettv.netcologne.de
- -- tvonline.ewe.de
-v18.0.16
- - Make loading EPG multithreaded
-v18.0.15
- - Add debian folder
- - Remove tinyxml2
-v18.0.14
- - Fix crash when loading EPG
- - Fix selection of Quickline
-v18.0.13
- - Add support for Zattoo reseller (Quickline and Net+)
-v18.0.12
- - Improve EPG loading
-v18.0.11
- - Try to fix loading of guide
-v18.0.10
- - Rename GetFileProperty to GetFilePropertyValue
-v18.0.9
- - Fix build and solve warnings
-v18.0.8
- - Load EPG async
-v18.0.7
- - Replace libcurl with kodi implementation
- - Add cache to improve loading time of recordings and timer
-v18.0.6
- - Adapt to final pvr api 5.7.0
-v18.0.5
- - Fix exception when loading timer
-v18.0.4
- - Remove unused code
- - Reformat code
- - Replace libyajl with rapidjson
-v18.0.3
- - Implement new replay api
-v18.0.2
- - Allow selection between dash and hls stream
-v18.0.1
- - Adapt to new api
- - Merge dash branch into master
-v18.0.0
- - Initial support for Kodi 18 Leia
- - Added minimalistic support for PVR Addon API 5.3.0
-v0.2.11
- - Merge v0.1.32
-v0.2.10
- - Merge v0.1.31
-v0.2.9
- - Merge v0.1.30
-v0.2.8
- - Fix error upon installation without settings
-v0.2.7
- - Fix some minor memory leaks
- - Add new time-shift parameter to "watch" request
-v0.2.6
- - Merge v0.1.29
-v0.2.5
- - Merge v0.1.28
-v0.2.4
- - Merge v0.1.27
-v0.2.3
- - Merge v0.1.26
-v0.2.2
- - Merge v0.1.24
-v0.2.1
- - Temporary fix to show correct epg in case of replay
-v0.2.0
- - Enable DASH
- - Enable Seeking (may not work with current inputstream.mpd)
- - Enable recording of past shows
- - Enable RePlay-TV
- - Please note that this version requires a patched version of Kodi v17
-v0.1.33
- - Initial support for Kodi 18 Leia
- - Added minimalistic support for PVR Addon API 5.3.0
-v0.1.32
- - Implement alternative EPG service to speed up and include description
-v0.1.31
- - Refactor epg cache to solve memory issue
-v0.1.30
- - Fix error upon installation without settings
- - Fix memory leaks
- - Remove some unused code
- - Sync code with zattoo_dash branch where possible
-v0.1.29
- - Use libcurl to support https
-v0.1.28
- - Fix case where no genre is available
-v0.1.27
- - Map genre in guid
- - Add genre to recording and timer
- - Add plot to recording
-v0.1.26
- - Fix en_gb translations
- - Show channel name for recordings
-v0.1.25
- - URL-Encode username and password
-v0.1.24
- - New logo and fanart
- - Add LICENSE.txt
- - Add english translation
-v0.1.23
- - Adapt to new API version
-v0.1.22
- - Support resume time and watch count
-v0.1.21
- - Re-add own HTTP implementation to allow access to cookies
-v0.1.20
- - Do not store app token and uuid anymore as Kodi does not store cookies since v17 beta 3
-v0.1.19
- - Generate and store a unique UUID for every installation
- - Ignore if hello fails
-v0.1.18
- - Improve login handling
- - Re-init session if we get errors on loading pages
-v0.1.17
- - Update timers &amp; recordings every 10 minutes or if a timer has reacht its start time
-v0.1.16
- - Fix another memory leak
- - Add option to only load favorites
-v0.1.15
- - Fix memory leaks
-v0.1.14
- - Add channel logos to addon (thanks to yattaah)
-v0.1.13
- - Refactor login and session handling
-v0.1.12
- - Always check that json is returned
-v0.1.11
- - Reuse session if possible
-v0.1.10
- - Preserve application token
-v0.1.9
- - Revert to using hls stream
-v0.1.8
- - Fix initial load. Open settings dialog if required
-v0.1.7
- - Fix windows build
- - Make recordings visible in EPG timeline
-v0.1.6
- - Fix linking of libYajl for OSX (and maybe also for other environments)
-v0.1.5
- - Fix sorting of favourites by using the first n channel numbers for them
- - Offset the remaining channels by the number of favourites to prevent overlaps
-v0.1.4
- - Support deletion of timer (planned recording)
- - Refresh timers after change
-v0.1.3
- - Support creating timers (for recordings)
- - Support deletion of recordings
-v0.1.2
- - Support watching recordings
-v0.1.1
- - Replace own HTTP implementation with Curl from Kodi
-v0.1.0
- - Support Kodi v17
-v0.0.3
- - Favoriten werden nun geladen
- - Es werden nun so viele EPG Daten im vorraus geladen wie in Kodi eingestellt
-    </news>
+    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
+    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
+    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
+    <summary lang="hr_HR">InputStream klijent za adaptivne tokove</summary>
+    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
+    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
+    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
+    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
+    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
+    <description lang="da_DK">InputStream-klient til adaptive streams</description>
+    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
+    <description lang="en_GB">InputStream client for adaptive streams. Common streaming protocols such as MPEG-DASH, HLS and Microsoft Smooth Streaming are supported.[CR][CR]The add-on also has support for DRM protected streams, such as Google Widevine, Microsoft PlayReady and others.[CR][CR]For documentation visit: https://github.com/xbmc/inputstream.adaptive</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
+    <description lang="hr_HR">InputStream klijent za adaptivne tokove</description>
+    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
+    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
+    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
+    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
   </extension>
-</addon>
-
-<addon id="skin.blue.amber" version="3.50.01" name="Amber Blue" provider-name="bsoriano, Jester, Joethepartylion, Pecinko">
-	<requires>
-		<import addon="xbmc.gui" version="5.15.0"/>
-		<import addon="script.favourites" version="7.1.1"/>
-		<import addon="resource.uisounds.amber" version="1.0.0"/>
-		<import addon="script.skinshortcuts" version="1.0.17"/>
-	</requires>
-	<extension point="xbmc.gui.skin" debugging="false">
-		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE. Version 3, June 2007</license>
-		<forum>https://forum.kodi.tv/forumdisplay.php?fid=203</forum>
-		<source>https://github.com/bartolomesoriano/skin.amber</source>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<screenshot>resources/screenshot01.jpg</screenshot>
-			<screenshot>resources/screenshot02.jpg</screenshot>
-			<screenshot>resources/screenshot03.jpg</screenshot>
-			<screenshot>resources/screenshot04.jpg</screenshot>
-			<screenshot>resources/screenshot05.jpg</screenshot>
-			<screenshot>resources/screenshot06.jpg</screenshot>
-			<screenshot>resources/screenshot07.jpg</screenshot>
-			<screenshot>resources/screenshot08.jpg</screenshot>
-			<screenshot>resources/screenshot09.jpg</screenshot>
-			<screenshot>resources/screenshot10.jpg</screenshot>
-		</assets>
-		<news>3.50.01 (17.04.2024)
-			- Blue MOD
-			- Polish description
-			3.4.32 (11-01-2022)
-			- Allow different view types for PVR
-			- Search for trailer and play trailer in window (video info)
-			- Date added and Last Played in video info dialog
-			- Linked movie info in episodes list dialog
-			- Many, many fixes!
-			3.4.31 (28-10-2021)
-			- Shelf Info for 2 shelves together
-			- Episodes List button in OSD
-			- Misc. fixes
-			3.4.30 (17-10-2021)
-			- Show Info for shelf items
-			- Search movies by tag
-			- Many misc. fixes
-		</news>
-		<summary lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar</summary>
-		<summary lang="da_DK">Ingen bloatware, kun dine medier med en brugerflade der er let at navigere</summary>
-		<summary lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer leicht zu navigierenden Oberfläche</summary>
-		<summary lang="en_AU">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="en_GB">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="en_NZ">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="en_US">No bloatware, just your media with an easy to navigate interface</summary>
-		<summary lang="es_ES">Sin excesos, solo su contenido con una interfaz fácil de navegar</summary>
-		<summary lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar</summary>
-		<summary lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega</summary>
-		<summary lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia</summary>
-		<summary lang="fr_CA">Pas d’inflagiciel, juste vos médias avec une interface facile à parcourir</summary>
-		<summary lang="fr_FR">Pas d&apos;usine à gaz, juste les médias avec une interface épurée</summary>
-		<summary lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti</summary>
-		<summary lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare</summary>
-		<summary lang="nl_NL">Geen bloatware, alleen jouw media in een makkelijk te navigeren omgeving</summary>
-		<summary lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem</summary>
-		<summary lang="pt_BR">Sem bloatware, apenas sua mídia com uma interface fácil de navegar</summary>
-		<summary lang="ru_RU">Никакого вредоносного ПО, только ваши медиафайлы с удобным интерфейсом</summary>
-		<summary lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面</summary>
-		<description lang="ca_ES">Sense bloatware, només els fitxers multimèdia amb una interfície fàcil de navegar.[CR]Utilitza algunes textures d&apos;skins Mediastream i Aeon.</description>
-		<description lang="de_DE">Keine Bloatware, nur Ihre Medien mit einer einfach zu navigierenden Oberfläche.[CR]Benutzt Texturen aus den Mediastream und Aeon skins.</description>
-		<description lang="en_AU">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="en_GB">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="en_NZ">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="en_US">No bloatware, just your media with an easy to navigate interface.[CR]Uses some textures from Mediastream and Aeon skins.</description>
-		<description lang="es_ES">Sin excesos, sólo su contenido con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de los skins Mediastream y Aeon.</description>
-		<description lang="es_MX">Nada de bloatware, solo tu multimedia con una interfaz fácil de navegar.[CR]Utiliza algunas texturas de las máscaras Mediastream y Aeon.</description>
-		<description lang="et_EE">Ei midagi üleliigset, ainult sinu meedium koos hõlpsasti navigeeritava liidesega.[CR]Kasutab mõnda Mediastream ja Aeon rüü tekstuuri.</description>
-		<description lang="fi_FI">Vain helppokäyttöinen käyttöliittymä mediakirjastollesi ilman turhia ominaisuuksia. [CR]Käyttää jonkin verran kuvamateriaalia Mediastream- ja Aeon-ulkoasuista.</description>
-		<description lang="fr_CA">Pas d’inflagiciel, juste vos médias avec une interface facile à parcourir.[CR]Utilise des textures des habillages Mediastream et Aeon.</description>
-		<description lang="fr_FR">Pas d&apos;utilisation excessive des ressources, juste vos médias avec une interface facile à utiliser.[CR]Utilise quelques textures provenant des habillages Mediastream et Aeon.</description>
-		<description lang="is_IS">Alls ekki óþarfa prjál, heldur bara margmiðlunarefnið þitt með einföldu viðmóti.[CR]Notar ýmsar áferðir úr Mediastream og Aeon skinnunum.</description>
-		<description lang="it_IT">Nessun bloatware, solo i tuoi file multimediali con un&apos;interfaccia facile da navigare.[CR]Usa alcune texture delle skin Mediastream e Aeon.</description>
-		<description lang="nl_NL">Geen bloatware, alleen jouw media met een makkelijk te navigeren interface.[CR]Gebruikt sommige texturen van de Mediastream- en Aeonontwerpen.</description>
-		<description lang="pl_PL">Bez zbędnego oprogramowania, tylko multimedia z łatwym w nawigacji interfejsem.[CR]Wykorzystuje niektóre tekstury ze skórek Mediastream i Aeon.</description>
-		<description lang="pt_BR">Sem excessos, apenas a sua mídia com uma interface fácil de navegar. [CR]Utiliza algumas texturas das skins Mediastream e Aeon.</description>
-		<description lang="pt_PT">Um tema sem excessos que apenas mostra a sua média com uma interface de navegação simples.[CR]Utiliza algumas texturas dos temas Mediastream e Aeon.</description>
-		<description lang="ru_RU">Никаких вредоносных программ, только ваши носители с удобным интерфейсом навигации.[CR] Использует некоторые текстуры из скинов Mediastream и Aeon.</description>
-		<description lang="zh_CN">没有臃肿的软件，只有你的媒体和一个易于导航的界面。[CR]使用了 Mediastream 和 Aeon 皮肤的一些纹理。</description>
-	</extension>
-</addon>
-
-<addon id="repository.mtr81" name="mtr81" version="1.0" provider-name="lg">
-    <extension point="xbmc.addon.repository" name="mtr81">
-        <dir>
-            <info compressed="false">https://mtr81.github.io/kodi_addons/addons/addons.xml</info>
-            <checksum>https://mtr81.github.io/kodi_addons/addons/addons.xml.md5</checksum>
-            <datadir zip="true">https://mtr81.github.io/kodi_addons/addons/</datadir>
-        </dir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Wtyczki do odtwarzacza Kodi (v.19,20)</summary>
-        <description>Wtyczki do odtwarzacza Kodi (v.19,20)</description>
-        <platform>all</platform>
-        <assets>
-            <icon></icon>
-            <fanart></fanart>
-        </assets>
-    </extension>
 </addon></addons>
+
+
