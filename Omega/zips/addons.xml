@@ -930,7 +930,7 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
 
 <addon
   id="inputstream.adaptive"
-  version="21.5.1"
+  version="21.5.2"
   name="InputStream Adaptive"
   provider-name="peak3d, Team Kodi">
   <requires>
@@ -947,7 +947,7 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
     extension=""
     tags="true"
     listitemprops="drm_legacy|license_type|license_key|license_url|license_url_append|license_data|license_flags|manifest_type|server_certificate|manifest_update_parameter|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|internal_cookies|config|manifest_config"
-    library_linux="inputstream.adaptive.so.21.5.1"/>
+    library_linux="inputstream.adaptive.so.21.5.2"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
 	<license>GPL-2.0-or-later</license>
@@ -980,5 +980,3 @@ matrix.3 fix  Send Runscript not XBMC.Runscript to Kodi (Kodi 19 change)</news>
     <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
   </extension>
 </addon></addons>
-
-
