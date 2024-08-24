@@ -1,3 +1,10 @@
+v22.0.1
+- Add patch for pthread create and compile option for Android NDK 26 compatibility with libzvbi
+- Disable vulkan in ffmpeg for Android as NDK 26 doesn't have vulkan_beta.h
+
+v22.0.0
+- Initial Release
+
 v21.3.5
 - Update depednencies to fix building on apple silicon (gnutls 3.8.4) and binutils on linux (2.41 or higher)
 

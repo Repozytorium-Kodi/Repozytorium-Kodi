@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="pvr.iptvsimple"
-  version="22.0.0"
+  version="22.1.1"
   name="IPTV Simple Client"
   provider-name="nightik and Ross Nicholson">
   <requires>
@@ -10,14 +10,14 @@
 <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="8.4.0" version="8.4.0"/>
+<import addon="kodi.binary.instance.pvr" minversion="9.0.0" version="9.0.1"/>
     <import addon="inputstream.ffmpegdirect" minversion="22.0.0"/>
     <import addon="inputstream.adaptive" minversion="22.0.0"/>
     <import addon="inputstream.rtmp" minversion="22.0.0"/>
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.iptvsimple.so.22.0.0"/>
+    library_linux="pvr.iptvsimple.so.22.1.1"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
