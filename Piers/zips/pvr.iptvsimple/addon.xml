@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="pvr.iptvsimple"
-  version="22.1.1"
+  version="22.1.2"
   name="IPTV Simple Client"
   provider-name="nightik and Ross Nicholson">
   <requires>
@@ -17,7 +17,7 @@
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.iptvsimple.so.22.1.1"/>
+    library_linux="pvr.iptvsimple.so.22.1.2"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
