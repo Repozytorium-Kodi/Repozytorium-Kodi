@@ -459,8 +459,61 @@
 </addon>
 
 <addon
+  id="inputstream.adaptive"
+  version="22.1.8"
+  name="InputStream Adaptive"
+  provider-name="peak3d, Team Kodi">
+  <requires>
+<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
+<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
+<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1"/>
+<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
+<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
+<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/>
+<import addon="kodi.binary.instance.videocodec" minversion="2.1.0" version="2.1.0"/></requires>
+  <extension
+    point="kodi.inputstream"
+    name="adaptive"
+    extension=""
+    tags="true"
+    listitemprops="drm|drm_legacy|license_type|license_key|license_url|license_url_append|license_data|license_flags|server_certificate|common_headers|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|config|manifest_config"
+    library_linux="inputstream.adaptive.so.22.1.8"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>linux</platform>
+	<license>GPL-2.0-or-later</license>
+	<source>https://github.com/xbmc/inputstream.adaptive</source>
+	<assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
+    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
+    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
+    <summary lang="en_GB">InputStream client for adaptive streams</summary>
+    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
+    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
+    <summary lang="hr_HR">InputStream klijent za adaptivne tokove</summary>
+    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
+    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
+    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
+    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
+    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
+    <description lang="da_DK">InputStream-klient til adaptive streams</description>
+    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
+    <description lang="en_GB">InputStream client for adaptive streams. Common streaming protocols such as MPEG-DASH, HLS and Microsoft Smooth Streaming are supported.[CR][CR]The add-on also has support for DRM protected streams, such as Google Widevine, Microsoft PlayReady and others.[CR][CR]For documentation visit: https://github.com/xbmc/inputstream.adaptive</description>
+    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
+    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
+    <description lang="hr_HR">InputStream klijent za adaptivne tokove</description>
+    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
+    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
+    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
+    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
+  </extension>
+</addon>
+
+<addon
   id="inputstream.ffmpegdirect"
-  version="22.0.1"
+  version="22.1.0"
   name="Inputstream FFmpeg Direct"
   provider-name="Ross Nicholson">
   <requires>
@@ -475,8 +528,8 @@
     name="ffmpegdirect"
     extension=""
     tags="true"
-    listitemprops="program_number|stream_mode|open_mode|manifest_type|default_url|is_realtime_stream|playback_as_live|programme_start_time|programme_end_time|catchup_url_format_string|catchup_url_near_live_format_string|catchup_buffer_start_time|catchup_buffer_end_time|catchup_buffer_offset|catchup_terminates|catchup_granularity|timezone_shift|default_programme_duration|programme_catchup_id"
-    library_linux="inputstream.ffmpegdirect.so.22.0.1" />
+    listitemprops="program_number|stream_mode|open_mode|manifest_type|default_url|is_realtime_stream|playback_as_live|programme_start_time|programme_end_time|catchup_url_format_string|catchup_url_near_live_format_string|catchup_buffer_start_time|catchup_buffer_end_time|catchup_buffer_offset|catchup_terminates|catchup_granularity|timezone_shift|default_programme_duration|programme_catchup_id|http_proxy_host|http_proxy_port|http_proxy_user|http_proxy_password"
+    library_linux="inputstream.ffmpegdirect.so.22.1.0" />
   <extension point="xbmc.service" library="resources/lib/runner.py"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
@@ -511,22 +564,22 @@
 
 <addon
   id="pvr.nextpvr"
-  version="22.2.0"
+  version="22.4.0"
   name="NextPVR PVR Client"
   provider-name="Graeme Blackley">
   <requires>
 <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1"/>
 <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="9.0.0" version="9.0.1"/>
+<import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0"/>
     <import addon="inputstream.ffmpegdirect" optional="true"/>
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.nextpvr.so.22.2.0"/>
+    library_linux="pvr.nextpvr.so.22.4.0"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
@@ -695,61 +748,8 @@
 </addon>
 
 <addon
-  id="inputstream.adaptive"
-  version="22.1.7"
-  name="InputStream Adaptive"
-  provider-name="peak3d, Team Kodi">
-  <requires>
-<import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
-<import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
-<import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
-<import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.inputstream" minversion="3.3.0" version="3.3.0"/>
-<import addon="kodi.binary.instance.videocodec" minversion="2.1.0" version="2.1.0"/></requires>
-  <extension
-    point="kodi.inputstream"
-    name="adaptive"
-    extension=""
-    tags="true"
-    listitemprops="drm|drm_legacy|license_type|license_key|license_url|license_url_append|license_data|license_flags|server_certificate|common_headers|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|config|manifest_config"
-    library_linux="inputstream.adaptive.so.22.1.7"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>linux</platform>
-	<license>GPL-2.0-or-later</license>
-	<source>https://github.com/xbmc/inputstream.adaptive</source>
-	<assets>
-      <icon>icon.png</icon>
-      <fanart>fanart.jpg</fanart>
-    </assets>
-    <summary lang="ca_ES">Client InputStream per a transmissions adaptatives</summary>
-    <summary lang="da_DK">InputStream-klient til adaptive streams</summary>
-    <summary lang="de_DE">InputStream-Client für adaptive Streams</summary>
-    <summary lang="en_GB">InputStream client for adaptive streams</summary>
-    <summary lang="es_ES">Cliente InputStream para flujo de datos adaptativos</summary>
-    <summary lang="he_IL">לקוח InputStream לתזרימים מסתגלים</summary>
-    <summary lang="hr_HR">InputStream klijent za adaptivne tokove</summary>
-    <summary lang="hu_HU">InputStream kliens az adaptív streamekhez</summary>
-    <summary lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</summary>
-    <summary lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</summary>
-    <summary lang="ru_RU">InputStream клиент для адаптивных трансляций</summary>
-    <description lang="ca_ES">Client InputStream per a transmissions adaptatives</description>
-    <description lang="da_DK">InputStream-klient til adaptive streams</description>
-    <description lang="de_DE">InputStream-Client für adaptive Streams</description>
-    <description lang="en_GB">InputStream client for adaptive streams. Common streaming protocols such as MPEG-DASH, HLS and Microsoft Smooth Streaming are supported.[CR][CR]The add-on also has support for DRM protected streams, such as Google Widevine, Microsoft PlayReady and others.[CR][CR]For documentation visit: https://github.com/xbmc/inputstream.adaptive</description>
-    <description lang="es_ES">Cliente InputStream para flujo de datos adaptativos</description>
-    <description lang="he_IL">לקוח InputStream לתזרימים מסתגלים</description>
-    <description lang="hr_HR">InputStream klijent za adaptivne tokove</description>
-    <description lang="hu_HU">InputStream kliens az adaptív streamekhez</description>
-    <description lang="ko_KR">가변 스트림을 위한 InputStream 클라이언트</description>
-    <description lang="pl_PL">Klient InputStream dla strumieni adaptacyjnych</description>
-    <description lang="ru_RU">InputStream клиент для адаптивных трансляций</description>
-  </extension>
-</addon>
-
-<addon
   id="pvr.iptvsimple"
-  version="22.2.2"
+  version="22.3.0"
   name="IPTV Simple Client"
   provider-name="nightik and Ross Nicholson">
   <requires>
@@ -758,14 +758,14 @@
 <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="9.0.0" version="9.1.0"/>
+<import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0"/>
     <import addon="inputstream.ffmpegdirect" minversion="22.0.0"/>
     <import addon="inputstream.adaptive" minversion="22.0.0"/>
     <import addon="inputstream.rtmp" minversion="22.0.0"/>
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.iptvsimple.so.22.2.2"/>
+    library_linux="pvr.iptvsimple.so.22.3.0"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
@@ -927,3 +927,4 @@
     <disclaimer lang="zh_TW">這是測試中的軟體！原創作者無法針對以下情況負責：包括播放失敗，不正確的電子節目表，多餘的時數，或任何不可預期的不良影響。</disclaimer>
   </extension>
 </addon></addons>
+

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="pvr.nextpvr"
-  version="22.2.0"
+  version="22.4.0"
   name="NextPVR PVR Client"
   provider-name="Graeme Blackley">
   <requires>
 <import addon="kodi.binary.global.main" minversion="2.0.0" version="2.0.2"/>
 <import addon="kodi.binary.global.general" minversion="1.0.4" version="1.0.5"/>
-<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.0"/>
+<import addon="kodi.binary.global.gui" minversion="5.15.0" version="5.15.1"/>
 <import addon="kodi.binary.global.filesystem" minversion="1.1.7" version="1.1.8"/>
 <import addon="kodi.binary.global.network" minversion="1.0.0" version="1.0.4"/>
 <import addon="kodi.binary.global.tools" minversion="1.0.0" version="1.0.4"/>
-<import addon="kodi.binary.instance.pvr" minversion="9.0.0" version="9.0.1"/>
+<import addon="kodi.binary.instance.pvr" minversion="9.2.0" version="9.2.0"/>
     <import addon="inputstream.ffmpegdirect" optional="true"/>
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.nextpvr.so.22.2.0"/>
+    library_linux="pvr.nextpvr.so.22.4.0"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>

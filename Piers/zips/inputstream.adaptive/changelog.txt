@@ -1,3 +1,6 @@
+v22.1.8 (2024-10-28)
+- Fixed playback problems when playing videos with different drm in sequence
+
 v22.1.7 (2024-10-16)
 - Default DRM headers are always added to prevent possible license request errors
 - Fix old DRM config backward compatibilty for cases such as playready
