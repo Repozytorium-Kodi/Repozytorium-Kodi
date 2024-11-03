@@ -1,3 +1,6 @@
+v22.3.1
+- Take account of whitespace at end of xmltv file while doing format check
+
 v22.3.0
 - PVR Add-on API v9.2.0
 

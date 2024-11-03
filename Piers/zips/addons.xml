@@ -749,7 +749,7 @@
 
 <addon
   id="pvr.iptvsimple"
-  version="22.3.0"
+  version="22.3.1"
   name="IPTV Simple Client"
   provider-name="nightik and Ross Nicholson">
   <requires>
@@ -765,7 +765,7 @@
   </requires>
   <extension
     point="kodi.pvrclient"
-    library_linux="pvr.iptvsimple.so.22.3.0"/>
+    library_linux="pvr.iptvsimple.so.22.3.1"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
     <license>GPL-2.0-or-later</license>
@@ -927,4 +927,3 @@
     <disclaimer lang="zh_TW">這是測試中的軟體！原創作者無法針對以下情況負責：包括播放失敗，不正確的電子節目表，多餘的時數，或任何不可預期的不良影響。</disclaimer>
   </extension>
 </addon></addons>
-
