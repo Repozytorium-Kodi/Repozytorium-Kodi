@@ -1,3 +1,20 @@
+v22.1.11 (2024-12-20)
+- Fix aarch64 widevine library loading
+- Unknown subtitles are now set correctly as Undetermined
+- [HLS] Add support to read subtitle codec from manifest (fix TTML subtitles)
+
+v22.1.10 (2024-11-16)
+- Changes/cleanups to MP4 AVCC/HVCC extradata conversions
+- Removed deprecated API ADDON_READ_CHUNKED uses
+- Replaced API ADDON_READ_AUDIO_VIDEO with ADDON_READ_NO_BUFFER
+- Other code cleanups
+
+v22.1.9 (2024-11-05)
+- New test samples python addon (on github sources or see wiki)
+- [SmoothStreaming] Fix corrupted playback regression
+- [HLS] Fix VOD playback problems with periods
+- [HLS] Fix possible crash on stream quality change
+
 v22.1.8 (2024-10-28)
 - Fixed playback problems when playing videos with different drm in sequence
 
