@@ -1,3 +1,10 @@
+v22.1.12 (2025-01-13)
+- Implemented thread pool to prevent intensive thread uses on demux read
+- Fix crash due to ODR violation on tests project
+- Fixes to solve GCC-15 compilation problems
+- Cleanups to avc / annexb conversion
+- Cleanups to Atmos profiles to sync with Kodi core changes
+
 v22.1.11 (2024-12-20)
 - Fix aarch64 widevine library loading
 - Unknown subtitles are now set correctly as Undetermined
