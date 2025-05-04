@@ -1,6 +1,9 @@
+v22.1.1
+- Move CVariant to ffmpegdirect namespace to avoid collision with CVariant in Kodi, which causes random crashes when playing streams with this addon.
+
 v22.1.0
-- Allow HTTP PROXY to be set via KODIPROP's
-- Allow http_proxy to be set via URL arguemnt using pipe
+- Bump ffmpeg to 7.1 and add patch to fix build on aarch64 targeting ios/tvos
+- Bump gnutls to 3.8.8 and add patch to fix build on Android NDK r27+
 
 v22.0.1
 - Add patch for pthread create and compile option for Android NDK 26 compatibility with libzvbi
