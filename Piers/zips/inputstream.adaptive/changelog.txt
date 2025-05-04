@@ -1,3 +1,82 @@
+v22.2.3 (2025-05-04)
+- Fix crash with Widevine CDM 4.10.2891.0
+- [Widevine] Updated CDM interface
+- [Dash] Add «urn:tva:metadata:cs:AudioPurposeCS:2007» scheme parsing
+
+v22.2.2 (2025-04-27)
+- Implemented GUI messages for common playback problems
+- [Dash] Implemented UTCTiming for more accurate live streaming start
+- [Dash] Fix SegmentTemplate TSB to prevent use extra live delay workarounds
+- [TTML] Fix missing subtitles when read nested Span tag with timing
+- New «dash_utctiming» parameter to inputstream.adaptive.manifest_config, see wiki for details
+- Updated translations
+
+v22.2.1 (2025-04-15)
+- Add new setting «Resolution limit» to Stream selection «Ask Quality»
+- Implemented Color Transfer Characteristic to detect HDR types (if manifest provides it)
+- TRC implementation should solve GUI/Subtitles brightness problem with HDR/DV videos
+- «Ask quality» dialog can now show info about HDR types (if manifest provides it)
+- Fix regression double video quality change with «Ask quality»
+- Fix regression on adaptive quality that dont change while in playback
+- Fix regression on DASH AdaptationSet «default» override parameter for video stream
+- Fix and improved live delay, that worst cases was causing buffering or broken playback
+- Fix missing profiles on AAC codec name due to recent changes on Kodi GUI
+- [HLS] Fix video streams groupings (HDR types) due to unmanaged VIDEO-RANGE tag (TRC)
+- Updated translations
+
+v22.2.0 (2025-04-06)
+- IMPORTANT CHANGE, FROM THIS VERSION FOLLOWING OLD DRM PROPERTIES ARE DEPRECATED:
+inputstream.adaptive.license_type
+inputstream.adaptive.license_key
+inputstream.adaptive.license_data
+inputstream.adaptive.server_certificate
+inputstream.adaptive.license_flags
+inputstream.adaptive.pre_init_data
+IT IS RECOMMENDED TO BEGIN THE TRANSITION TO USE THE NEW DRM PROPERTIES:
+inputstream.adaptive.drm_legacy
+inputstream.adaptive.drm
+To learn more about all the changes read:
+Wiki page: «Integration DRM»
+PR: https://github.com/xbmc/inputstream.adaptive/pull/1724
+- INFO: Widevine CDM 4.10.2891.0 cannot be used to play videos, if you installed it reinstall an old version
+- Implemented DRM auto-selection to «inputstream.adaptive.drm»
+- HDCP breaking changes, to learn about changes read Wiki page «HDCP resolution limit»
+- Removed «Ignore HDCP status» setting, now its disabled by default
+- New «check_hdcp» parameter to inputstream.adaptive.config property
+- New «resolution_limit» parameter to inputstream.adaptive.config property
+- The new DRM properties «drm_legacy» and «drm» no longer force a single DRM session
+- Add support to show all codec variants to stream selection «Ask quality»
+- Initial implementation of codec priority order, for now internally only
+- Fix playback problem due to UUID KID uppercase/lowercase format mismatch
+- [ClearKey] Add support to set license data as URI «data» scheme format
+- [ClearKey] Fix playback with streams that have mixed unencrypted/encrypted segments
+- [Widevine] Fix JSON traverse used on JSON license to find data, now correctly traverse arrays
+- [HLS] Fix possible parsing problem due to malformed KEYID tag value
+- [HLS] Removed hack that used DRM objects to store segments AES data
+- [HLS] Fix timeshift on single period video stream
+- [HLS] Fix possible repeated frames on live stream with discontinuities
+- [DASH] Fix playback when ContentProtection does not contain PSSH in CENC format
+- [SMOOTHSTREAMING] Add support to override PlayReady with ClearKey DRM
+- Fix playback with SMIL URL manifests
+- Fix video seek hung/freeze problem with some DRM videos
+- Fix json bool type parsing on path_data_traverse/path_hdcp_res_traverse parameters
+- Reworked hack to reject audio streams that require Widevine secure path decoder (non-android)
+- Removed various code workarounds
+
+v22.1.13 (2025-03-07)
+- Fix possible persistent data in memory between played videos (cause of playback errors)
+- Fix building errors when more recents Windows SDK are used
+- Fix building with CMake 4.0
+- Updated pugixml dependency to 1.15
+- Updated rapidjson dependency to upstream
+- Updated dlfcn-win32 dependency to 1.4.2
+- Updated googletest dependency to 1.16.0
+- Add ARM64 config support to CDM library
+- [DASH] Deprecated custom «role» tag with «forced» value
+- [DASH] Add support to «role» tag with «forced-subtiltle» value
+- Add log warning for unsupported TTML image-based subtitles
+- Updated translations
+
 v22.1.12 (2025-01-13)
 - Implemented thread pool to prevent intensive thread uses on demux read
 - Fix crash due to ODR violation on tests project
