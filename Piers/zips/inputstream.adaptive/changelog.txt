@@ -1,3 +1,16 @@
+v22.2.5 (2025-07-06)
+- Implemented support to play Fairplay with ClearKey (MP4 container only)
+- [Dash] Fix playback when a manifest contains unsupported streams
+- Fix playback with IP with port number
+- Fix crash when parsing some widevine PSSHs
+- Updated translations
+
+v22.2.4 (2025-05-15)
+- [ClearKey] Implemented CBCS support (MP4 container)
+- Fix playback problem due to URLs containing dots on paths
+- Replaced RapidJSON dependency with Nlohmann JSON
+- Updated translations
+
 v22.2.3 (2025-05-04)
 - Fix crash with Widevine CDM 4.10.2891.0
 - [Widevine] Updated CDM interface

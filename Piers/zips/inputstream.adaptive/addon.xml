@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
   id="inputstream.adaptive"
-  version="22.2.3"
+  version="22.2.5"
   name="InputStream Adaptive"
   provider-name="peak3d, Team Kodi">
   <requires>
@@ -17,7 +17,7 @@
     extension=""
     tags="true"
     listitemprops="drm|drm_legacy|license_type|license_key|license_url|license_url_append|license_data|license_flags|server_certificate|common_headers|manifest_upd_params|manifest_params|manifest_headers|stream_params|stream_headers|original_audio_language|play_timeshift_buffer|pre_init_data|stream_selection_type|chooser_bandwidth_max|chooser_resolution_max|chooser_resolution_secure_max|live_delay|config|manifest_config"
-    library_linux="inputstream.adaptive.so.22.2.3"/>
+    library_linux="inputstream.adaptive.so.22.2.5"/>
   <extension point="xbmc.addon.metadata">
     <platform>linux</platform>
 	<license>GPL-2.0-or-later</license>
@@ -69,6 +69,6 @@
     <description lang="pt_BR">Cliente InputStream para transmissões adaptáveis. Há suporte para protocolos de streaming comuns, como MPEG-DASH, HLS e Microsoft Smooth Streaming.[CR][CR]O addon também oferece suporte a transmissões protegidas por DRM, como Google Widevine, Microsoft PlayReady e outros.[CR][CR]Para obter a documentação, visite: https://github.com/xbmc/inputstream.adaptive</description>
     <description lang="ru_RU">Клиент InputStream для адаптивных потоков. Поддерживаются такие распространенные потоковые протоколы, как MPEG-DASH, HLS и Microsoft Smooth Streaming.[CR][CR]Дополнение также поддерживает потоки, защищенные DRM, такие как Google Widevine, Microsoft PlayReady и другие.[CR][CR]Для получения документации посетите: https://github.com/xbmc/inputstream.adaptive</description>
     <description lang="sv_SE">InputStream-klient för adaptiva strömmar. Stöd finns för vanliga streamingprotokoll som MPEG-DASH, HLS och Microsoft Smooth Streaming.[CR][CR]Tillägget har även stöd för DRM-skyddade strömmar, som Google Widevine, Microsoft PlayReady m.fl.[CR][CR]För dokumentation besök: https://github.com/xbmc/inputstream.adaptive</description>
-    <description lang="zh_CN">用于自适应流的 InputStream 客户端</description>
+    <description lang="zh_CN">用于自适应流的 InputStream 客户端。支持 MPEG-DASH、HLS 和 Microsoft Smooth Streaming 等常见流协议。[CR][CR]该插件还支持 Google Widevine、Microsoft PlayReady 等 DRM 保护流。[CR][CR]如需文档，请访问：https://github.com/xbmc/inputstream.adaptive</description>
   </extension>
 </addon>

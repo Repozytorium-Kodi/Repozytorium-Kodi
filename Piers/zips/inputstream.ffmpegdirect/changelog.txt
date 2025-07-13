@@ -1,3 +1,7 @@
+v22.1.2
+- Fix crashing when % in headers caused by missing kodi::Log format arg
+- Fix building of openssl on windows caused by missing strawberryperl in path
+
 v22.1.1
 - Move CVariant to ffmpegdirect namespace to avoid collision with CVariant in Kodi, which causes random crashes when playing streams with this addon.
 
